@@ -1,0 +1,20 @@
+{
+    "name": "bronk/student-manager",
+    "description": "Student Manager",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bronk\\StudentManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dennis Bronk",
+            "email": "dbronk2@gmail.com"
+        }
+    ],
+    "require": {}
+}
