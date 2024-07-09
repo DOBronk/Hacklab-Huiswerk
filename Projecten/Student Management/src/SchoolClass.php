@@ -2,28 +2,41 @@
 
 namespace Projecten\StudentManager;
 
+/**
+ * Summary of SchoolClass
+ */
 class SchoolClass
 {
     private array $students;
-    public function __construct(
-        public readonly string $name,
-        public readonly int $year,
-        public Mentor $mentor
-    ) {
+    public string $name;
+    public int $year;
+    public Mentor $mentor;
+
+    public function __construct(string $name, string $year, Mentor $mentor)
+    {
         $this->students = [];
+        $this->name = $name;
+        $this->mentor = $mentor;
+        $this->year = $year;
     }
 
+    public function getMentor(): Mentor
+    {
+        return $this->mentor;
+    }
     public function getStudents(): array
     {
         return $this->students;
     }
 
-    public function addStudent(Student $student): void
+    public function addStudent(Student ...$studenten): void
     {
-        if (!in_array($student, $this->students)) {
-            array_push($this->students, $student);
-        } else {
-            throw new \Exception("Deze student zit er al in");
+        foreach ($studenten as $student) {
+            if (!in_array($student, $this->students)) {
+                array_push($this->students, $student);
+            } else {
+                throw new \Exception("Deze student zit er al in");
+            }
         }
     }
 
