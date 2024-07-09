@@ -1,12 +1,19 @@
 <?PHP
 define("CHEAT", false);
+define("RUITEN", 'R');
+define("SCHOPPEN", 'S');
+define("KLAVER", 'K');
+define("HARTEN", 'H');
 
 $guessed = [];
 $attempts = 10;
 $secretCard = "";
-$cards = [];
+
 $cardTypes = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
-$cardColors = ['R', 'S', 'H', 'A'];     // Deze symbolen maken het niet makkelijker voor UI dus kleine vervangen met de volgende: ["♦", "♠", "♥", "♣"];
+$cardColors = [RUITEN, SCHOPPEN, HARTEN, KLAVER];
+
+
+$cardColors = [RUITEN, SCHOPPEN, HARTEN, KLAVER]; # / Deze symbolen maken het niet makkelijker voor UI dus kleine vervangen met de volgende: ["♦", "♠", "♥", "♣"];
 
 /**
  * Laat alle tot nu toe geraden kaarten zien
