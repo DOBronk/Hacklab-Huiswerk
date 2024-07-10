@@ -1,6 +1,6 @@
 <?PHP
-
-namespace Projecten\StudentManager;
+require_once "Mentor.php";
+require_once "Student.php";
 
 /**
  * Summary of SchoolClass
@@ -12,7 +12,7 @@ class SchoolClass
     public int $year;
     public Mentor $mentor;
 
-    public function __construct(string $name, string $year, Mentor $mentor)
+    public function __construct(string $name, int $year, Mentor $mentor)
     {
         $this->students = [];
         $this->name = $name;

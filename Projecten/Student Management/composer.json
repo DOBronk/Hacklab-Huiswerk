@@ -1,5 +1,5 @@
 {
-    "name": "bronk/student-manager",
+    "name": "bronk/studentmanager",
     "description": "Student Manager",
     "type": "project",
     "require-dev": {
