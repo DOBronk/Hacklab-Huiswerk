@@ -1,6 +1,4 @@
 <?PHP
-use DateTime;
-
 class Student
 {
     public $name;
