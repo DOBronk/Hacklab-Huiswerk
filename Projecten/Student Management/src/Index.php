@@ -1,12 +1,26 @@
 <?php
 require_once "Main.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = test_input($_POST["mentor"]);
+    $email = test_input($_POST["email"]);
+    $text = test_input($_POST["mailtext"]);
+
+    echo "<h3 style='background-color:Tomato;'>Je mailtje naar $name op emailadres $email met de tekst $text is hopelijk verzonden.</h3>";
+}
+function test_input($data): mixed
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 ?>
 
 <HTML>
 <h1>Middelbare School - OSG Piter Jelles </h1>
 
 <h2>Knopje om mailer class te testen</h2>
-<input type='button' value='Stuur mailtje' onclick="window.alert('<?php testMailer($arrs->getMentors()[0]); ?>')">
 
 <BR>
 <h2>Alle leerlingen geboren in 2004</h2>
