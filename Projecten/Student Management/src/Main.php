@@ -2,6 +2,8 @@
 require_once "Requirements.php";
 require_once "Mailer.php";
 
+
+
 $schoolClasses = [
     new SchoolClass('1A', 1, $mentors[0]),
     new SchoolClass('2B', 2, $mentors[1]),
@@ -68,7 +70,7 @@ function showStudent($student): void
     include 'html/students.html';
 }
 
-function showSpecials($students): void
+function showSpecials($students): array
 {
     $studentsMatched = [];
     foreach ($students as $student) {
@@ -76,8 +78,7 @@ function showSpecials($students): void
             array_push($studentsMatched, $student);
         }
     }
-    echo 'Alle studenten met als geboortejaar 2004 op de school: ';
-    showStudents($studentsMatched);
+    return $studentsMatched;
 }
 
 #showClasses($schoolClasses);
