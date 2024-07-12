@@ -6,23 +6,26 @@ $attempts = 10;
 $secretCard = "";
 $cards = [];
 $cardTypes = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
-$cardColors = ['R', 'S', 'H', 'A'];     // Deze symbolen maken het niet makkelijker voor UI dus kleine vervangen met de volgende: ["♦", "♠", "♥", "♣"];
+$cardColors = ['R', 'S', 'H', 'A'];     // Replacement for the following characters since my VSCode terminal hates them ["♦", "♠", "♥", "♣"];
 
 /**
- * Laat alle tot nu toe geraden kaarten zien
+ * Show all the cards that have been currently guessed
+ *
  * @return void
  */
-function drawMistakes()
+function drawMistakes(): void
 {
     global $guessed;
     echo "De volgende kaarten zijn al fout geraden: " . implode(' ', $guessed) . "\n\n";
 }
 
 /**
- * Kijk of de kaart kloppend is
+ * Check if the given card is valid, ohterwise add it to the guessed cards array
+ *
+ * @param string $input The input card to check against
  * @return bool
  */
-function guessCard($input)
+function guessCard($input): bool
 {
     global $guessed, $attempts, $secretCard;
     if ($input != $secretCard) {
@@ -34,10 +37,11 @@ function guessCard($input)
 }
 
 /**
- * Behandeld de user input
+ * Handle the user input
+ *
  * @return bool|string
  */
-function handleInput()
+function handleInput(): bool|string
 {
     global $cardColors, $cards;
     echo "Keuze uit volgende kleuren: " . implode(" ", $cardColors) . "\n\n";
@@ -51,20 +55,22 @@ function handleInput()
 }
 
 /**
- * Stelt een willekeurige kaart in
+ * Sets a random card
+ *
  * @return void
  */
-function getRandomcard()
+function getRandomcard(): void
 {
     global $cards, $secretCard;
     $secretCard = $cards[array_rand($cards)];
 }
 
 /**
- * Initialiseer alle mogelijke kaarten in het spel. Is eventueel aan te passen op klaverjassen etcetera
+ * Initialize all possible cards in the game (probably 52 for this game)
+ *
  * @return void
  */
-function initCards()
+function initCards(): void
 {
     global $cards, $cardColors, $cardTypes;
     foreach ($cardTypes as $card) {
@@ -75,10 +81,11 @@ function initCards()
 }
 
 /**
- * Initialiseer spel, om cheat aan of uit te zetten zet de cheat define/constant op false
+ * Initialize the game, enable cheat by setting CHEAT constant to true value
+ *
  * @return void
  */
-function init()
+function init(): void
 {
     global $attempts, $secretCard;
     initCards();
