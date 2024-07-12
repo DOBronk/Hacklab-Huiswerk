@@ -17,7 +17,7 @@ require_once "Main.php";
         <td><b>E-mail</b></td>
         <td><b>Telefoonnr</b></td>
     </tr>
-    <?php foreach (showSpecials($students) as $student) { ?>
+    <?php foreach (showSpecials() as $student) { ?>
         <tr>
             <?php ShowStudent($student); ?>
         </tr>

@@ -38,55 +38,42 @@ function showAllClasses(): void
 }
 
 /**
- * Show a single class 
- * @param mixed $schoolClass The schoolclass to be shown
+ * Show a single class
+ * @param SchoolClass $schoolClass The schoolclass to be shown
  * @return void
  */
-function showClass($schoolClass): void
+function showClass(SchoolClass $school): void
 {
-    $school = $schoolClass;
     include 'html/schoolclass.html';
 }
 
-/*    Shit voor in console output function ofzo voor later
-         echo "Klas: " . $schoolClass->name . " Leerjaar: " . $schoolClass->year . PHP_EOL;
-        echo "Mentor: " . $schoolClass->getMentor()->name . PHP_EOL;
-        echo "Studenten:";
-
-        showStudents($schoolClass->getStudents());
-
-        echo "\n\n";
-
-*/
-
 /**
  * Display mentor in HTML Table Columns
- * @param mixed $classmentor The mentor to be displayed
+ * @param Mentor $classmentor The mentor to be displayed
  * @return void
  */
-function showMentor($classmentor): void
+function showMentor(Mentor $mentor): void
 {
-    $mentor = $classmentor;
     include 'html/mentor.html';
 }
 
 /**
  * Display single student in HTML Table Columns
- * @param mixed $student
+ * @param Student $student
  * @return void
  */
-function showStudent($student): void
+function showStudent(Student $student): void
 {
     include 'html/students.html';
 }
 
 /**
  * Show all students with DOB in year 2004
- * @param mixed $students Array of students
  * @return array Array of students matching condition
  */
-function showSpecials($students): array
+function showSpecials(): array
 {
+    global $students;
     $studentsMatched = [];
     foreach ($students as $student) {
         if (str_contains($student->getBirth(), '2004')) {
