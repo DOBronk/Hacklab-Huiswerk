@@ -6,7 +6,7 @@ require_once "Main.php";
 <h1>Middelbare School - OSG Piter Jelles </h1>
 
 <h2>Knopje om mailer class te testen</h2>
-<input type='button' value='Stuur mailtje' onclick="window.alert('<?php testMailer($mentors[0]); ?>')">
+<input type='button' value='Stuur mailtje' onclick="window.alert('<?php testMailer($arrs->getMentors()[0]); ?>')">
 
 <BR>
 <h2>Alle leerlingen geboren in 2004</h2>

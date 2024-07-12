@@ -2,18 +2,7 @@
 require_once "Requirements.php";
 require_once "Mailer.php";
 
-// Set up the schoolclasses
-$schoolClasses = [
-    new SchoolClass('1A', 1, $mentors[0]),
-    new SchoolClass('2B', 2, $mentors[1]),
-    new SchoolClass('3C', 3, $mentors[2])
-];
-
-// Load the students into the appropriate classes
-$schoolClasses[0]->addStudent($students[0], $students[1], $students[2], $students[3], $students[4]);
-$schoolClasses[1]->addStudent($students[5], $students[6], $students[7], $students[8], $students[9]);
-$schoolClasses[2]->addStudent($students[10], $students[11], $students[12], $students[13], $students[14]);
-
+$arrs = new Arrays();
 /**
  * Send an email message to a mentor
  * @param Mentor $mentor The mentor to be addressed
@@ -31,8 +20,9 @@ function testMailer(Mentor $mentor): void
  */
 function showAllClasses(): void
 {
-    global $schoolClasses;
-    foreach ($schoolClasses as $school) {
+    global $arrs;
+
+    foreach ($arrs->getSchools() as $school) {
         showclass($school);
     }
 }
@@ -73,10 +63,10 @@ function showStudent(Student $student): void
  */
 function showSpecials(): array
 {
-    global $students;
+    global $arrs;
     $studentsMatched = [];
-    foreach ($students as $student) {
-        if (str_contains($student->getBirth(), '2004')) {
+    foreach ($arrs->getStudents() as $student) {
+        if (str_contains($student->dob, '2004')) {
             array_push($studentsMatched, $student);
         }
     }

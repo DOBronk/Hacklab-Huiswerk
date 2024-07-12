@@ -1,9 +1,9 @@
 <?PHP
-require_once "Mentor.php";
+
 require_once "Student.php";
 
 /**
- * Summary of SchoolClass
+ * SchoolClass class which holds the data of a schoolclass, some properties private so you can't modify from outside the class
  */
 class SchoolClass
 {
