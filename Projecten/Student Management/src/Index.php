@@ -20,9 +20,6 @@ function test_input($data): mixed
 <HTML>
 <h1>Middelbare School - OSG Piter Jelles </h1>
 
-<h2>Knopje om mailer class te testen</h2>
-
-<BR>
 <h2>Alle leerlingen geboren in 2004</h2>
 <table>
     <tr>
