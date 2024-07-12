@@ -16,10 +16,10 @@ $schoolClasses[2]->addStudent($students[10], $students[11], $students[12], $stud
 
 /**
  * Send an email message to a mentor
- * @param mixed $mentor The mentor to be addressed
+ * @param Mentor $mentor The mentor to be addressed
  * @return void
  */
-function testMailer($mentor): void
+function testMailer(Mentor $mentor): void
 {
     $mailer = new Mailer();
     $mailer->send("Testbericht", $mentor);
