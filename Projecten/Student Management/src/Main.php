@@ -1,5 +1,6 @@
 <?PHP
 require_once "Requirements.php";
+require_once "Mailer.php";
 
 $schoolClasses = [
     new SchoolClass('1A', 1, $mentors[0]),
@@ -11,6 +12,12 @@ $schoolClasses = [
 $schoolClasses[0]->addStudent($students[0], $students[1], $students[2], $students[3], $students[4]);
 $schoolClasses[1]->addStudent($students[5], $students[6], $students[7], $students[8], $students[9]);
 $schoolClasses[2]->addStudent($students[10], $students[11], $students[12], $students[13], $students[14]);
+
+function testMailer($mentor): void
+{
+    $mailer = new Mailer();
+    $mailer->send("Testbericht", $mentor);
+}
 
 function showClasses($schoolClasses): void
 {
@@ -54,6 +61,11 @@ function showStudents($schoolStudents): void
     foreach ($schoolStudents as $student) {
         include 'html/students.html';
     }
+}
+
+function showStudent($student): void
+{
+    include 'html/students.html';
 }
 
 function showSpecials($students): void

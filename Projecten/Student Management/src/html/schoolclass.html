@@ -1,9 +1,45 @@
-<h1> Klas :
-    <?= $school->name ?>
-</h1>
-<h2> Mentor:
-    <?= ShowMentor($school->getMentor()) ?>
-</h2>
-<h2> Studenten:
-    <?= ShowStudents($school->getStudents()) ?>
-</h2>
+<table>
+    <tr>
+        <td><b>Schoolklas
+                <?= $school->name ?>
+            </b>
+        </td>
+        <td><b>Leerjaar:
+                <?= $school->year ?>
+            </b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Mentor:</b>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Naam</b></td>
+        <td><b>Geboortedatum</b></td>
+        <td><b>E-mail</b></td>
+        <td><b>Telefoonnr</b></td>
+    </tr>
+    <tr>
+        <?= ShowMentor($school->getMentor()) ?>
+    </tr>
+    <tr>
+        <td>
+            <b>Studenten</b>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Naam</b></td>
+        <td><b>Geboortedatum</b></td>
+        <td><b>E-mail</b></td>
+        <td><b>Telefoonnr</b></td>
+    </tr>
+    <?php foreach($school->getStudents() as $student) { ?>
+    <tr>
+        <?php ShowStudent($student); ?>
+    </tr>
+    <?php } ?>
+    </tr>
+</table>
+<br>
+<br>
