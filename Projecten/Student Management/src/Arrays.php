@@ -6,8 +6,6 @@ $mentors = [
     new Mentor('Fatima El Amrani', '5-09-1982', 'elamrani@example.com', '06-34567890')
 ];
 
-
-
 $students = [
     new Student('Jan de Vries', '10-01-2005', 'jan.devres@example.com', '06-12345678'),
     new Student('Lisa Jansen', '5-03-2005', 'lisa.jansen@example.com', '06-23456789'),
