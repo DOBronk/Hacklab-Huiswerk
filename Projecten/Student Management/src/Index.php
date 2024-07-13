@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $mailer = new Mailer();
     echo "<h3 style='background-color:Tomato;'>";
-    $mailer->send($text, $arrs->getMentors()[$mentorId]);
+    $mailer->send($text, $arrs->getMentor($mentorId));
     echo "</h3>";
 }
 function test_input($data): mixed
