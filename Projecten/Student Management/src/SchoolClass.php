@@ -8,9 +8,9 @@ require_once "Student.php";
 class SchoolClass
 {
     private array $students;
-    public string $name;
-    public int $year;
-    public Mentor $mentor;
+    private string $name;
+    private int $year;
+    private Mentor $mentor;
 
     public function __construct(string $name, int $year, Mentor $mentor)
     {
@@ -27,6 +27,30 @@ class SchoolClass
     public function getStudents(): array
     {
         return $this->students;
+    }
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getYear(): int
+    {
+        return $this->year;
+    }
+
+    public function setYear(int $year): void
+    {
+        $this->year = $year;
+    }
+
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    public function setMentor(Mentor $mentor)
+    {
+        $this->mentor = $mentor;
     }
 
     public function addStudent(Student ...$studenten): void

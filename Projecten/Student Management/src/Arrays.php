@@ -58,9 +58,17 @@ class Arrays
     {
         return $this->students;
     }
+    public function getStudent($id): Student
+    {
+        return $this->students[$id];
+    }
     public function getMentors(): array
     {
         return $this->mentors;
+    }
+    public function getMentor(int $id): Mentor
+    {
+        return $this->mentors[$id];
     }
 }
 

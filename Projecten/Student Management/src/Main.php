@@ -34,6 +34,7 @@ function showAllClasses(): void
  */
 function showClass(SchoolClass $school): void
 {
+    global $arrs;
     include 'html/schoolclass.html';
 }
 
@@ -66,10 +67,9 @@ function showSpecials(): array
     global $arrs;
     $studentsMatched = [];
     foreach ($arrs->getStudents() as $student) {
-        if (str_contains($student->dob, '2004')) {
+        if (str_contains($student->getDob(), '2004')) {
             array_push($studentsMatched, $student);
         }
     }
     return $studentsMatched;
 }
-

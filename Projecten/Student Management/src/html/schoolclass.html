@@ -1,11 +1,11 @@
 <table>
     <tr>
         <td><b>Schoolklas
-                <?= $school->name ?>
+                <?= $school->getName() ?>
             </b>
         </td>
         <td><b>Leerjaar:
-                <?= $school->year ?>
+                <?= $school->getYear() ?>
             </b>
         </td>
     </tr>
@@ -30,8 +30,7 @@
             <center>
                 <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>''>
                 <input type="text" size="30" name="mailtext">
-                <input type="hidden" name="mentor" value="<?= $school->getMentor()->name ?>">
-                <input type="hidden" name="email" value="<?= $school->getMentor()->mail ?>">
+                <input type="hidden" name="mentorid" value="<?= array_search($school->getMentor(), $arrs->getMentors()) ?>">
                 <input type="submit" value="versturen">
             </form>
         </center>

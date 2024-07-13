@@ -1,12 +1,15 @@
 <?php
 require_once "Main.php";
+require_once "Mailer.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = test_input($_POST["mentor"]);
-    $email = test_input($_POST["email"]);
+    $mentorId = test_input($_POST["mentorid"]);
     $text = test_input($_POST["mailtext"]);
 
-    echo "<h3 style='background-color:Tomato;'>Je mailtje naar $name op emailadres $email met de tekst $text is hopelijk verzonden.</h3>";
+    $mailer = new Mailer();
+    echo "<h3 style='background-color:Tomato;'>";
+    $mailer->send($text, $arrs->getMentors()[$mentorId]);
+    echo "</h3>";
 }
 function test_input($data): mixed
 {
