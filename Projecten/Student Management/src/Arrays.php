@@ -1,5 +1,4 @@
 <?PHP
-
 class Arrays
 {
     private array $mentors;
@@ -54,14 +53,20 @@ class Arrays
     {
         return $this->schoolClasses;
     }
+
+    public function getSchool(int $id): SchoolClass
+    {
+        return $this->schoolClasses[$id];
+    }
     public function getStudents(): array
     {
         return $this->students;
     }
-    public function getStudent($id): Student
+    public function getStudent(int $id): Student
     {
         return $this->students[$id];
     }
+
     public function getMentors(): array
     {
         return $this->mentors;

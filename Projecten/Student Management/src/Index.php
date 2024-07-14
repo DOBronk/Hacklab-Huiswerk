@@ -3,13 +3,19 @@ require_once "Main.php";
 require_once "Mailer.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $mentorId = test_input($_POST["mentorid"]);
-    $text = test_input($_POST["mailtext"]);
-
-    $mailer = new Mailer();
-    echo "<h3 style='background-color:Tomato;'>";
-    $mailer->send($text, $arrs->getMentor($mentorId));
-    echo "</h3>";
+    if (isset($_POST["mentorid"])) {
+        $mentorId = test_input($_POST["mentorid"]);
+        $text = test_input($_POST["mailtext"]);
+        $mailer = new Mailer();
+        echo "<h3 style='background-color:Tomato;'>";
+        $mailer->send($text, $arrs->getMentor($mentorId));
+        echo "</h3>";
+    } elseif (isset($_POST["studentid"])) {
+        $studentId = test_input($_POST["studentid"]);
+        $schoolClassId = test_input($_POST["schoolclassid"]);
+        $arrs->getSchool($schoolClassId)->delStudent($arrs->getStudent($studentId));
+        echo "<h3 style='background-color:Tomato;'>" . count($arrs->getStudents()) . " studenten in main array nog over (mag niet lager zijn) </h3>";
+    }
 }
 function test_input($data): mixed
 {
@@ -20,27 +26,35 @@ function test_input($data): mixed
 }
 ?>
 
-<HTML>
-<h1>Middelbare School - OSG Piter Jelles </h1>
+<!DOCTYPE html>
+<html lang="nl">
 
-<h2>Alle leerlingen geboren in 2004</h2>
-<table>
-    <tr>
-        <td><b>Naam</b></td>
-        <td><b>Geboortedatum</b></td>
-        <td><b>E-mail</b></td>
-        <td><b>Telefoonnr</b></td>
-    </tr>
-    <?php foreach (showSpecials() as $student) { ?>
+<head>
+    <title>Hoofdpagina</title>
+</head>
+
+<body>
+    <h1>Middelbare School - OSG Piter Jelles </h1>
+
+    <h2>Alle leerlingen geboren in 2004</h2>
+    <table>
         <tr>
-            <?php ShowStudent($student); ?>
+            <td><b>Naam</b></td>
+            <td><b>Geboortedatum</b></td>
+            <td><b>E-mail</b></td>
+            <td><b>Telefoonnr</b></td>
         </tr>
-    <?php } ?>
-    </tr>
-</table>
+        <?php foreach (showSpecials() as $student) { ?>
+            <tr>
+                <?php ShowStudent($student); ?>
+            </tr>
+        <?php } ?>
+        </tr>
+    </table>
 
-<h2>Alle klassen op de middelbare school</h2>
+    <h2>Alle klassen op de middelbare school</h2>
 
-<?php showAllClasses(); ?>
+    <?php showAllClasses(); ?>
+</body>
 
-</HTML>
+</html>

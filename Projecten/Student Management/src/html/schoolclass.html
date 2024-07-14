@@ -40,13 +40,11 @@
     <tr>
         <td>Stuur email naar mentor</td>
         <td colspan=3>
-            <center>
-                <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>''>
-                <input type="text" size="30" name="mailtext">
+            <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>''>
+                <input type="text"  style="width: 80%; margin: 0 auto;"  name="mailtext">
                 <input type="hidden" name="mentorid" value="<?= array_search($school->getMentor(), $arrs->getMentors()) ?>">
-                <input type="submit" value="versturen">
+                <input type="submit" style="float: right;" value="versturen">
             </form>
-        </center>
         </td>
     </tr>
     <tr>
@@ -65,6 +63,13 @@
     <?php foreach($school->getStudents() as $student) { ?>
     <tr>
         <?php ShowStudent($student); ?>
+<td>
+                <form method="post" action=' <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>''>
+                <input type="hidden" name="studentid" value="<?= array_search($student, $arrs->getStudents()) ?>">
+                <input type="hidden" name="schoolclassid" value="<?= array_search($school, $arrs->getSchools()) ?>">
+                <input type="submit" value="Verwijder">
+            </form>
+        </td>
     </tr>
     <?php } ?>
     </tr>

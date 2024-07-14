@@ -1,8 +1,16 @@
 <?PHP
 require_once "Requirements.php";
 require_once "Mailer.php";
-
+session_start();
 $arrs = new Arrays();
+
+if (isset($_SESSION["arrs"])) {
+    $arrs = $_SESSION["arrs"];
+} else {
+    $_SESSION["arrs"] = $arrs;
+}
+
+
 /**
  * Send an email message to a mentor
  * @param Mentor $mentor The mentor to be addressed
@@ -45,6 +53,7 @@ function showClass(SchoolClass $school): void
  */
 function showMentor(Mentor $mentor): void
 {
+    global $arrs;
     include 'html/mentor.html';
 }
 
@@ -55,7 +64,8 @@ function showMentor(Mentor $mentor): void
  */
 function showStudent(Student $student): void
 {
-    include 'html/students.html';
+    global $arrs;
+    include 'html/student.html';
 }
 
 /**
