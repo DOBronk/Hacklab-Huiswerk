@@ -51,7 +51,7 @@ function constructPassword(string ...$files): string
             " chunks were found. Did you include all files in the arguments?";
     }
     // Construct the final string by itterating from 1 to total chunks
-    for ($i = 1; $i < $length + 1; $i++) {
+    for ($i = 1; $i <= $length; $i++) {
         $result .= $final[$i];
     }
 
