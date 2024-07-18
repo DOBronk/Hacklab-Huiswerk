@@ -1,0 +1,100 @@
+Spicy2Curry
+Spicy5Mustard
+Spicy1Mustard
+Spicy4Jalapeno
+Bitter5Cocoa
+Sweet3Marshmallow
+Sweet3Candy
+Sweet2Agave Nectar
+Sweet5Sugar
+Sour3Vinegar
+Sour2Tamarind
+Sweet3Agave Nectar
+Sweet3Molasses
+Salty2Pretzel
+Salty3Feta Cheese
+Bitter1Kale
+Bitter5Brussels Sprouts
+Bitter1Dark Chocolate
+Salty4Anchovies
+Sweet1Chocolate
+Salty1Salt
+Sour4Yogurt
+Spicy5Black Pepper
+Spicy2Habanero
+Bitter4Radish
+Sweet5Caramel
+Spicy4Curry
+Spicy1Horseradish
+Salty4Bacon
+Sour5Sour Cream
+Bitter1Brussels Sprouts
+Spicy5Horseradish
+Bitter2Kale
+Sour3Lime
+Bitter3Quinine
+Sweet1Caramel
+Bitter2Cocoa
+Salty4Soy Sauce
+Sweet4Molasses
+Salty5Ham
+Sour3Kefir
+Bitter2Arugula
+Spicy4Ginger
+Spicy1Wasabi
+Sour5Sour Cherry
+Sweet1Honey
+Spicy3Jalapeno
+Bitter1Radish
+Sweet2Maple Syrup
+Spicy3Black Pepper
+Salty1Capers
+Salty5Bacon
+Bitter5Dark Chocolate
+Sour5Green Apple
+Sweet4Marshmallow
+Spicy2Cayenne Pepper
+Sour4Sour Cream
+Salty2Seafood
+Sour5Lemon
+Sweet2Sugar
+Salty1Olives
+Salty4Pretzel
+Sour1Lemon
+Spicy3Ginger
+Sour2Kefir
+Sweet2Honey
+Sweet5Candy
+Bitter1Dandelion Greens
+Salty1Ham
+Spicy4Wasabi
+Salty3Capers
+Bitter5Dandelion Greens
+Salty2Anchovies
+Spicy2Chili Pepper
+Sweet5Butterscotch
+Sweet3Butterscotch
+Salty5Feta Cheese
+Bitter3Coffee
+Sour1Yogurt
+Bitter1Quinine
+Sour3Tamarind
+Salty3Salt
+Bitter1Coffee
+Sweet2Chocolate
+Bitter4Arugula
+Bitter4Grapefruit
+Spicy4Cayenne Pepper
+Sour3Rhubarb
+Sweet4Maple Syrup
+Spicy4Chili Pepper
+Salty4Seafood
+Sweet3Honey
+Sweet1Molasses
+Sweet5Marshmallow
+Sweet3Caramel
+Sour1Sour Cherry
+Sour2Rhubarb
+Sour2Sour Cream
+Sour1Vinegar
+Sour5Lime
