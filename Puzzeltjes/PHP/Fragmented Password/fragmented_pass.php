@@ -31,8 +31,8 @@ function parseTextFile(string $file): array
     return $pieces;
 }
 /**
- * Construct the password bij creating and merging arrays with chunks together and looping through them by number
- * @param string[] $files All files to be parsed in string format
+ * Construct the password by creating and merging arrays with chunks together and looping through them by number
+ * @param string $files All files to be parsed
  * @return string Constructed password
  */
 function constructPassword(string ...$files): string
