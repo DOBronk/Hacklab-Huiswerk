@@ -1,12 +1,12 @@
 <?PHP
-class Arrays
+require_once "SchoolClass.php";
+class School
 {
     private array $mentors;
     private array $students;
     private array $schoolClasses;
 
-
-    public function __construct()
+    public function __construct(private string $name)
     {
         $this->loadData();
     }
@@ -62,6 +62,12 @@ class Arrays
     {
         return $this->students;
     }
+
+    public function addStudent(Student $student)
+    {
+        array_push($this->students, $student);
+    }
+
     public function getStudent(int $id): Student
     {
         return $this->students[$id];
@@ -75,8 +81,12 @@ class Arrays
     {
         return $this->mentors[$id];
     }
-}
 
+    public function getName(): string
+    {
+        return $this->name;
+    }
+}
 
 
 

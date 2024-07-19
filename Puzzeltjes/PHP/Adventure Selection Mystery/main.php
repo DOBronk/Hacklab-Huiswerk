@@ -17,3 +17,7 @@ foreach ($data as $value) {
     }
 }
 
+if (strlen($result) < 18) {
+    echo $result . PHP_EOL;
+}
+

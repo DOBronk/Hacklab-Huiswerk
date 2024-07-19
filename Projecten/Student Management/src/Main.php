@@ -1,15 +1,20 @@
 <?PHP
-require_once "Requirements.php";
+require_once "School.php";
 require_once "Mailer.php";
+
 session_start();
-$arrs = new Arrays();
+$arrs = new School("OSG Piter Jelles");
 
-if (isset($_SESSION["arrs"])) {
-    $arrs = $_SESSION["arrs"];
-} else {
-    $_SESSION["arrs"] = $arrs;
+function loadAll()
+{
+    global $arrs;
+
+    if (isset($_SESSION["arrs"])) {
+        $arrs = $_SESSION["arrs"];
+    } else {
+        $_SESSION["arrs"] = new School("OSG Piter Jelles");
+    }
 }
-
 
 /**
  * Send an email message to a mentor
@@ -43,7 +48,13 @@ function showAllClasses(): void
 function showClass(SchoolClass $school): void
 {
     global $arrs;
-    include 'html/schoolclass.html';
+    include 'html/schoolclass/schoolclass.html';
+}
+
+function showAllStudents(): void
+{
+    global $arrs;
+    include_once 'html/student/list.html';
 }
 
 /**

@@ -1,6 +1,13 @@
 <?php
 require_once "Main.php";
 require_once "Mailer.php";
+require_once "controllers/studentcontroller.php";
+
+loadAll();
+
+if (isset($_GET['action']) && $_GET['action'] == 'abort') {
+    session_unset();
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["mentorid"])) {
@@ -24,37 +31,40 @@ function test_input($data): mixed
     $data = htmlspecialchars($data);
     return $data;
 }
+
+$page = $_GET['page'] ?? 'home';
+
+$page = test_input($page);
+
+if (isset($_GET['action']) && test_input($_GET['action']) == 'reset') {
+    session_unset();
+    session_destroy();
+    header('location: /');
+}
+
+switch ($page) {
+    case 'home':
+        include_once "html\home.html";
+        break;
+    case "student":
+        switch (@$_GET["action"]) {
+            case "list":
+                Studentcontroller::List();
+                break;
+            case "modify":
+                Studentcontroller::ShowModify();
+                break;
+            case "save":
+                if (!isset($_GET['studentid'])) {
+                    Studentcontroller::Create($_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']);
+                } else {
+                    Studentcontroller::Modify($_GET['studentid'], $_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']);
+                }
+                break;
+            case "create":
+                Studentcontroller::ShowCreate();
+                break;
+
+        }
+}
 ?>
-
-<!DOCTYPE html>
-<html lang="nl">
-
-<head>
-    <title>Hoofdpagina</title>
-</head>
-
-<body>
-    <h1>Middelbare School - OSG Piter Jelles </h1>
-
-    <h2>Alle leerlingen geboren in 2004</h2>
-    <table>
-        <tr>
-            <td><b>Naam</b></td>
-            <td><b>Geboortedatum</b></td>
-            <td><b>E-mail</b></td>
-            <td><b>Telefoonnr</b></td>
-        </tr>
-        <?php foreach (showSpecials() as $student) { ?>
-            <tr>
-                <?php ShowStudent($student); ?>
-            </tr>
-        <?php } ?>
-        </tr>
-    </table>
-
-    <h2>Alle klassen op de middelbare school</h2>
-
-    <?php showAllClasses(); ?>
-</body>
-
-</html>

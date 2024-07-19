@@ -60,18 +60,21 @@
         <td><b>E-mail</b></td>
         <td><b>Telefoonnr</b></td>
     </tr>
-    <?php foreach($school->getStudents() as $student) { ?>
+    <?php foreach($school->getStudents() as $studentId => $student) { ?>
     <tr>
         <?php ShowStudent($student); ?>
 <td>
                 <form method="post" action=' <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>''>
-                <input type="hidden" name="studentid" value="<?= array_search($student, $arrs->getStudents()) ?>">
+                <input type="hidden" name="studentid" value="<?= $studentId ?>">
                 <input type="hidden" name="schoolclassid" value="<?= array_search($school, $arrs->getSchools()) ?>">
                 <input type="submit" value="Verwijder">
             </form>
         </td>
     </tr>
     <?php } ?>
+    <tr>
+        <td></td>
+    </tr>
     </tr>
 </table>
 <br>

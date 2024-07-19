@@ -1,23 +1,16 @@
 <?PHP
-
 require_once "Student.php";
-
+require_once "Person.php";
 /**
  * SchoolClass class which holds the data of a schoolclass, some properties private so you can't modify from outside the class
  */
 class SchoolClass
 {
     private array $students;
-    private string $name;
-    private int $year;
-    private Mentor $mentor;
 
-    public function __construct(string $name, int $year, Mentor $mentor)
+    public function __construct(private string $name, private int $year, private Mentor $mentor)
     {
         $this->students = [];
-        $this->name = $name;
-        $this->mentor = $mentor;
-        $this->year = $year;
     }
 
     public function getMentor(): Mentor

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Hoofdpagina</title>
+</head>
+
+<body>
+    <h1>Middelbare School - OSG Piter Jelles </h1>
+
+    <a href="/?action=reset">Sessie vernieuwen</a> <br><br>
+    <a href="/?page=student&action=create">Student aanmaken</a> <br><br>
+    <a href="/?page=student&action=list">Alle studenten weergeven</a>
+
+    <h2>Alle leerlingen geboren in 2004</h2>
+    <table>
+        <tr>
+            <td><b>Naam</b></td>
+            <td><b>Geboortedatum</b></td>
+            <td><b>E-mail</b></td>
+            <td><b>Telefoonnr</b></td>
+        </tr>
+
+        <?php foreach (showSpecials() as $student) { ?>
+        <tr>
+            <?php ShowStudent($student); ?>
+        </tr>
+        <?php } ?>
+
+        </tr>
+    </table>
+    <br>
+    <h2>Alle klassen op de middelbare school</h2>
+
+    <?php showAllClasses(); ?>
+</body>
+
+</html>

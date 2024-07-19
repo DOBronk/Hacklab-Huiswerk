@@ -1,0 +1,20 @@
+<ul>
+    <?php foreach($arrs->getStudents() as $id => $student) { ?>
+    <li>
+        <p>
+            <?= $student->getName() ?>
+        </p>
+        <p>
+            <?= $student->getDob() ?>
+        </p>
+        <p>
+            <?= $student->getMail() ?>
+        </p>
+        <p>
+            <?= $student->getPhone() ?>
+        </p>
+        <p><a href="/?page=student&action=modify&studentid=<?= $id ?>">Wijzigen</a></p>
+    </li>
+    <?php } ?>
+
+</ul>
