@@ -1,0 +1,1826 @@
+Date,Cookie Type,Units Sold
+2022-01-01,Chocolate Chip,51
+2022-01-01,Oatmeal Raisin,51
+2022-01-01,Sugar,33
+2022-01-01,Peanut Butter,89
+2022-01-01,Snickerdoodle,37
+2022-01-02,Chocolate Chip,47
+2022-01-02,Oatmeal Raisin,48
+2022-01-02,Sugar,89
+2022-01-02,Peanut Butter,77
+2022-01-02,Snickerdoodle,20
+2022-01-03,Chocolate Chip,40
+2022-01-03,Oatmeal Raisin,63
+2022-01-03,Sugar,47
+2022-01-03,Peanut Butter,63
+2022-01-03,Snickerdoodle,68
+2022-01-04,Chocolate Chip,64
+2022-01-04,Oatmeal Raisin,25
+2022-01-04,Sugar,88
+2022-01-04,Peanut Butter,68
+2022-01-04,Snickerdoodle,57
+2022-01-05,Chocolate Chip,99
+2022-01-05,Oatmeal Raisin,66
+2022-01-05,Sugar,14
+2022-01-05,Peanut Butter,57
+2022-01-05,Snickerdoodle,49
+2022-01-06,Chocolate Chip,68
+2022-01-06,Oatmeal Raisin,66
+2022-01-06,Sugar,65
+2022-01-06,Peanut Butter,54
+2022-01-06,Snickerdoodle,29
+2022-01-07,Chocolate Chip,41
+2022-01-07,Oatmeal Raisin,51
+2022-01-07,Sugar,68
+2022-01-07,Peanut Butter,91
+2022-01-07,Snickerdoodle,61
+2022-01-08,Chocolate Chip,27
+2022-01-08,Oatmeal Raisin,24
+2022-01-08,Sugar,71
+2022-01-08,Peanut Butter,47
+2022-01-08,Snickerdoodle,92
+2022-01-09,Chocolate Chip,60
+2022-01-09,Oatmeal Raisin,83
+2022-01-09,Sugar,78
+2022-01-09,Peanut Butter,37
+2022-01-09,Snickerdoodle,91
+2022-01-10,Chocolate Chip,94
+2022-01-10,Oatmeal Raisin,94
+2022-01-10,Sugar,48
+2022-01-10,Peanut Butter,37
+2022-01-10,Snickerdoodle,31
+2022-01-11,Chocolate Chip,34
+2022-01-11,Oatmeal Raisin,40
+2022-01-11,Sugar,74
+2022-01-11,Peanut Butter,69
+2022-01-11,Snickerdoodle,79
+2022-01-12,Chocolate Chip,90
+2022-01-12,Oatmeal Raisin,21
+2022-01-12,Sugar,34
+2022-01-12,Peanut Butter,88
+2022-01-12,Snickerdoodle,63
+2022-01-13,Chocolate Chip,75
+2022-01-13,Oatmeal Raisin,20
+2022-01-13,Sugar,53
+2022-01-13,Peanut Butter,42
+2022-01-13,Snickerdoodle,33
+2022-01-14,Chocolate Chip,58
+2022-01-14,Oatmeal Raisin,84
+2022-01-14,Sugar,39
+2022-01-14,Peanut Butter,40
+2022-01-14,Snickerdoodle,87
+2022-01-15,Chocolate Chip,96
+2022-01-15,Oatmeal Raisin,22
+2022-01-15,Sugar,66
+2022-01-15,Peanut Butter,59
+2022-01-15,Snickerdoodle,50
+2022-01-16,Chocolate Chip,30
+2022-01-16,Oatmeal Raisin,82
+2022-01-16,Sugar,88
+2022-01-16,Peanut Butter,36
+2022-01-16,Snickerdoodle,90
+2022-01-17,Chocolate Chip,87
+2022-01-17,Oatmeal Raisin,74
+2022-01-17,Sugar,89
+2022-01-17,Peanut Butter,45
+2022-01-17,Snickerdoodle,71
+2022-01-18,Chocolate Chip,67
+2022-01-18,Oatmeal Raisin,86
+2022-01-18,Sugar,51
+2022-01-18,Peanut Butter,126
+2022-01-18,Snickerdoodle,49
+2022-01-19,Chocolate Chip,20
+2022-01-19,Oatmeal Raisin,100
+2022-01-19,Sugar,28
+2022-01-19,Peanut Butter,62
+2022-01-19,Snickerdoodle,50
+2022-01-20,Chocolate Chip,82
+2022-01-20,Oatmeal Raisin,36
+2022-01-20,Sugar,93
+2022-01-20,Peanut Butter,51
+2022-01-20,Snickerdoodle,72
+2022-01-21,Chocolate Chip,32
+2022-01-21,Oatmeal Raisin,65
+2022-01-21,Sugar,79
+2022-01-21,Peanut Butter,26
+2022-01-21,Snickerdoodle,32
+2022-01-22,Chocolate Chip,63
+2022-01-22,Oatmeal Raisin,33
+2022-01-22,Sugar,44
+2022-01-22,Peanut Butter,37
+2022-01-22,Snickerdoodle,55
+2022-01-23,Chocolate Chip,29
+2022-01-23,Oatmeal Raisin,90
+2022-01-23,Sugar,89
+2022-01-23,Peanut Butter,31
+2022-01-23,Snickerdoodle,50
+2022-01-24,Chocolate Chip,82
+2022-01-24,Oatmeal Raisin,71
+2022-01-24,Sugar,41
+2022-01-24,Peanut Butter,69
+2022-01-24,Snickerdoodle,78
+2022-01-25,Chocolate Chip,91
+2022-01-25,Oatmeal Raisin,82
+2022-01-25,Sugar,57
+2022-01-25,Peanut Butter,27
+2022-01-25,Snickerdoodle,89
+2022-01-26,Chocolate Chip,60
+2022-01-26,Oatmeal Raisin,94
+2022-01-26,Sugar,87
+2022-01-26,Peanut Butter,85
+2022-01-26,Snickerdoodle,43
+2022-01-27,Chocolate Chip,28
+2022-01-27,Oatmeal Raisin,50
+2022-01-27,Sugar,92
+2022-01-27,Peanut Butter,48
+2022-01-27,Snickerdoodle,73
+2022-01-28,Chocolate Chip,92
+2022-01-28,Oatmeal Raisin,53
+2022-01-28,Sugar,60
+2022-01-28,Peanut Butter,70
+2022-01-28,Snickerdoodle,58
+2022-01-29,Chocolate Chip,58
+2022-01-29,Oatmeal Raisin,92
+2022-01-29,Sugar,29
+2022-01-29,Peanut Butter,84
+2022-01-29,Snickerdoodle,64
+2022-01-30,Chocolate Chip,51
+2022-01-30,Oatmeal Raisin,40
+2022-01-30,Sugar,89
+2022-01-30,Peanut Butter,98
+2022-01-30,Snickerdoodle,174
+2022-01-31,Chocolate Chip,58
+2022-01-31,Oatmeal Raisin,33
+2022-01-31,Sugar,37
+2022-01-31,Peanut Butter,33
+2022-01-31,Snickerdoodle,39
+2022-02-01,Chocolate Chip,97
+2022-02-01,Oatmeal Raisin,63
+2022-02-01,Sugar,53
+2022-02-01,Peanut Butter,52
+2022-02-01,Snickerdoodle,26
+2022-02-02,Chocolate Chip,74
+2022-02-02,Oatmeal Raisin,12
+2022-02-02,Sugar,53
+2022-02-02,Peanut Butter,76
+2022-02-02,Snickerdoodle,74
+2022-02-03,Chocolate Chip,34
+2022-02-03,Oatmeal Raisin,39
+2022-02-03,Sugar,67
+2022-02-03,Peanut Butter,38
+2022-02-03,Snickerdoodle,25
+2022-02-04,Chocolate Chip,25
+2022-02-04,Oatmeal Raisin,46
+2022-02-04,Sugar,33
+2022-02-04,Peanut Butter,91
+2022-02-04,Snickerdoodle,72
+2022-02-05,Chocolate Chip,39
+2022-02-05,Oatmeal Raisin,50
+2022-02-05,Sugar,42
+2022-02-05,Peanut Butter,23
+2022-02-05,Snickerdoodle,62
+2022-02-06,Chocolate Chip,72
+2022-02-06,Oatmeal Raisin,51
+2022-02-06,Sugar,33
+2022-02-06,Peanut Butter,24
+2022-02-06,Snickerdoodle,48
+2022-02-07,Chocolate Chip,78
+2022-02-07,Oatmeal Raisin,49
+2022-02-07,Sugar,44
+2022-02-07,Peanut Butter,55
+2022-02-07,Snickerdoodle,55
+2022-02-08,Chocolate Chip,85
+2022-02-08,Oatmeal Raisin,88
+2022-02-08,Sugar,23
+2022-02-08,Peanut Butter,53
+2022-02-08,Snickerdoodle,106
+2022-02-09,Chocolate Chip,75
+2022-02-09,Oatmeal Raisin,60
+2022-02-09,Sugar,85
+2022-02-09,Peanut Butter,93
+2022-02-09,Snickerdoodle,25
+2022-02-10,Chocolate Chip,20
+2022-02-10,Oatmeal Raisin,88
+2022-02-10,Sugar,45
+2022-02-10,Peanut Butter,28
+2022-02-10,Snickerdoodle,62
+2022-02-11,Chocolate Chip,35
+2022-02-11,Oatmeal Raisin,58
+2022-02-11,Sugar,72
+2022-02-11,Peanut Butter,57
+2022-02-11,Snickerdoodle,44
+2022-02-12,Chocolate Chip,68
+2022-02-12,Oatmeal Raisin,42
+2022-02-12,Sugar,58
+2022-02-12,Peanut Butter,20
+2022-02-12,Snickerdoodle,46
+2022-02-13,Chocolate Chip,94
+2022-02-13,Oatmeal Raisin,61
+2022-02-13,Sugar,76
+2022-02-13,Peanut Butter,85
+2022-02-13,Snickerdoodle,41
+2022-02-14,Chocolate Chip,56
+2022-02-14,Oatmeal Raisin,99
+2022-02-14,Sugar,50
+2022-02-14,Peanut Butter,48
+2022-02-14,Snickerdoodle,19
+2022-02-15,Chocolate Chip,80
+2022-02-15,Oatmeal Raisin,29
+2022-02-15,Sugar,100
+2022-02-15,Peanut Butter,69
+2022-02-15,Snickerdoodle,51
+2022-02-16,Chocolate Chip,20
+2022-02-16,Oatmeal Raisin,33
+2022-02-16,Sugar,48
+2022-02-16,Peanut Butter,86
+2022-02-16,Snickerdoodle,91
+2022-02-17,Chocolate Chip,35
+2022-02-17,Oatmeal Raisin,79
+2022-02-17,Sugar,91
+2022-02-17,Peanut Butter,76
+2022-02-17,Snickerdoodle,84
+2022-02-18,Chocolate Chip,90
+2022-02-18,Oatmeal Raisin,40
+2022-02-18,Sugar,80
+2022-02-18,Peanut Butter,51
+2022-02-18,Snickerdoodle,55
+2022-02-19,Chocolate Chip,86
+2022-02-19,Oatmeal Raisin,50
+2022-02-19,Sugar,29
+2022-02-19,Peanut Butter,50
+2022-02-19,Snickerdoodle,60
+2022-02-20,Chocolate Chip,30
+2022-02-20,Oatmeal Raisin,49
+2022-02-20,Sugar,39
+2022-02-20,Peanut Butter,28
+2022-02-20,Snickerdoodle,62
+2022-02-21,Chocolate Chip,73
+2022-02-21,Oatmeal Raisin,73
+2022-02-21,Sugar,94
+2022-02-21,Peanut Butter,22
+2022-02-21,Snickerdoodle,93
+2022-02-22,Chocolate Chip,20
+2022-02-22,Oatmeal Raisin,58
+2022-02-22,Sugar,73
+2022-02-22,Peanut Butter,89
+2022-02-22,Snickerdoodle,48
+2022-02-23,Chocolate Chip,54
+2022-02-23,Oatmeal Raisin,23
+2022-02-23,Sugar,71
+2022-02-23,Peanut Butter,79
+2022-02-23,Snickerdoodle,99
+2022-02-24,Chocolate Chip,70
+2022-02-24,Oatmeal Raisin,23
+2022-02-24,Sugar,74
+2022-02-24,Peanut Butter,79
+2022-02-24,Snickerdoodle,53
+2022-02-25,Chocolate Chip,47
+2022-02-25,Oatmeal Raisin,63
+2022-02-25,Sugar,68
+2022-02-25,Peanut Butter,73
+2022-02-25,Snickerdoodle,30
+2022-02-26,Chocolate Chip,89
+2022-02-26,Oatmeal Raisin,64
+2022-02-26,Sugar,28
+2022-02-26,Peanut Butter,25
+2022-02-26,Snickerdoodle,51
+2022-02-27,Chocolate Chip,22
+2022-02-27,Oatmeal Raisin,50
+2022-02-27,Sugar,34
+2022-02-27,Peanut Butter,47
+2022-02-27,Snickerdoodle,52
+2022-02-28,Chocolate Chip,41
+2022-02-28,Oatmeal Raisin,34
+2022-02-28,Sugar,40
+2022-02-28,Peanut Butter,33
+2022-02-28,Snickerdoodle,59
+2022-03-01,Chocolate Chip,68
+2022-03-01,Oatmeal Raisin,45
+2022-03-01,Sugar,100
+2022-03-01,Peanut Butter,58
+2022-03-01,Snickerdoodle,96
+2022-03-02,Chocolate Chip,92
+2022-03-02,Oatmeal Raisin,64
+2022-03-02,Sugar,67
+2022-03-02,Peanut Butter,94
+2022-03-02,Snickerdoodle,82
+2022-03-03,Chocolate Chip,66
+2022-03-03,Oatmeal Raisin,78
+2022-03-03,Sugar,75
+2022-03-03,Peanut Butter,86
+2022-03-03,Snickerdoodle,54
+2022-03-04,Chocolate Chip,88
+2022-03-04,Oatmeal Raisin,79
+2022-03-04,Sugar,95
+2022-03-04,Peanut Butter,51
+2022-03-04,Snickerdoodle,31
+2022-03-05,Chocolate Chip,77
+2022-03-05,Oatmeal Raisin,79
+2022-03-05,Sugar,68
+2022-03-05,Peanut Butter,83
+2022-03-05,Snickerdoodle,43
+2022-03-06,Chocolate Chip,65
+2022-03-06,Oatmeal Raisin,63
+2022-03-06,Sugar,96
+2022-03-06,Peanut Butter,55
+2022-03-06,Snickerdoodle,86
+2022-03-07,Chocolate Chip,30
+2022-03-07,Oatmeal Raisin,72
+2022-03-07,Sugar,50
+2022-03-07,Peanut Butter,82
+2022-03-07,Snickerdoodle,22
+2022-03-08,Chocolate Chip,48
+2022-03-08,Oatmeal Raisin,51
+2022-03-08,Sugar,94
+2022-03-08,Peanut Butter,90
+2022-03-08,Snickerdoodle,74
+2022-03-09,Chocolate Chip,90
+2022-03-09,Oatmeal Raisin,78
+2022-03-09,Sugar,52
+2022-03-09,Peanut Butter,44
+2022-03-09,Snickerdoodle,88
+2022-03-10,Chocolate Chip,43
+2022-03-10,Oatmeal Raisin,81
+2022-03-10,Sugar,95
+2022-03-10,Peanut Butter,87
+2022-03-10,Snickerdoodle,32
+2022-03-11,Chocolate Chip,57
+2022-03-11,Oatmeal Raisin,42
+2022-03-11,Sugar,88
+2022-03-11,Peanut Butter,25
+2022-03-11,Snickerdoodle,90
+2022-03-12,Chocolate Chip,36
+2022-03-12,Oatmeal Raisin,82
+2022-03-12,Sugar,21
+2022-03-12,Peanut Butter,80
+2022-03-12,Snickerdoodle,63
+2022-03-13,Chocolate Chip,26
+2022-03-13,Oatmeal Raisin,81
+2022-03-13,Sugar,28
+2022-03-13,Peanut Butter,29
+2022-03-13,Snickerdoodle,26
+2022-03-14,Chocolate Chip,92
+2022-03-14,Oatmeal Raisin,30
+2022-03-14,Sugar,35
+2022-03-14,Peanut Butter,73
+2022-03-14,Snickerdoodle,99
+2022-03-15,Chocolate Chip,86
+2022-03-15,Oatmeal Raisin,76
+2022-03-15,Sugar,95
+2022-03-15,Peanut Butter,59
+2022-03-15,Snickerdoodle,27
+2022-03-16,Chocolate Chip,32
+2022-03-16,Oatmeal Raisin,46
+2022-03-16,Sugar,53
+2022-03-16,Peanut Butter,40
+2022-03-16,Snickerdoodle,90
+2022-03-17,Chocolate Chip,20
+2022-03-17,Oatmeal Raisin,96
+2022-03-17,Sugar,24
+2022-03-17,Peanut Butter,56
+2022-03-17,Snickerdoodle,78
+2022-03-18,Chocolate Chip,49
+2022-03-18,Oatmeal Raisin,100
+2022-03-18,Sugar,45
+2022-03-18,Peanut Butter,89
+2022-03-18,Snickerdoodle,39
+2022-03-19,Chocolate Chip,38
+2022-03-19,Oatmeal Raisin,41
+2022-03-19,Sugar,96
+2022-03-19,Peanut Butter,92
+2022-03-19,Snickerdoodle,76
+2022-03-20,Chocolate Chip,58
+2022-03-20,Oatmeal Raisin,54
+2022-03-20,Sugar,83
+2022-03-20,Peanut Butter,144
+2022-03-20,Snickerdoodle,61
+2022-03-21,Chocolate Chip,23
+2022-03-21,Oatmeal Raisin,93
+2022-03-21,Sugar,22
+2022-03-21,Peanut Butter,54
+2022-03-21,Snickerdoodle,42
+2022-03-22,Chocolate Chip,76
+2022-03-22,Oatmeal Raisin,43
+2022-03-22,Sugar,75
+2022-03-22,Peanut Butter,82
+2022-03-22,Snickerdoodle,80
+2022-03-23,Chocolate Chip,62
+2022-03-23,Oatmeal Raisin,33
+2022-03-23,Sugar,62
+2022-03-23,Peanut Butter,83
+2022-03-23,Snickerdoodle,71
+2022-03-24,Chocolate Chip,45
+2022-03-24,Oatmeal Raisin,60
+2022-03-24,Sugar,34
+2022-03-24,Peanut Butter,71
+2022-03-24,Snickerdoodle,20
+2022-03-25,Chocolate Chip,89
+2022-03-25,Oatmeal Raisin,26
+2022-03-25,Sugar,66
+2022-03-25,Peanut Butter,83
+2022-03-25,Snickerdoodle,26
+2022-03-26,Chocolate Chip,90
+2022-03-26,Oatmeal Raisin,56
+2022-03-26,Sugar,82
+2022-03-26,Peanut Butter,100
+2022-03-26,Snickerdoodle,50
+2022-03-27,Chocolate Chip,59
+2022-03-27,Oatmeal Raisin,90
+2022-03-27,Sugar,48
+2022-03-27,Peanut Butter,34
+2022-03-27,Snickerdoodle,35
+2022-03-28,Chocolate Chip,39
+2022-03-28,Oatmeal Raisin,57
+2022-03-28,Sugar,54
+2022-03-28,Peanut Butter,81
+2022-03-28,Snickerdoodle,51
+2022-03-29,Chocolate Chip,38
+2022-03-29,Oatmeal Raisin,96
+2022-03-29,Sugar,37
+2022-03-29,Peanut Butter,55
+2022-03-29,Snickerdoodle,73
+2022-03-30,Chocolate Chip,84
+2022-03-30,Oatmeal Raisin,20
+2022-03-30,Sugar,58
+2022-03-30,Peanut Butter,94
+2022-03-30,Snickerdoodle,82
+2022-03-31,Chocolate Chip,77
+2022-03-31,Oatmeal Raisin,64
+2022-03-31,Sugar,89
+2022-03-31,Peanut Butter,61
+2022-03-31,Snickerdoodle,50
+2022-04-01,Chocolate Chip,49
+2022-04-01,Oatmeal Raisin,144
+2022-04-01,Sugar,80
+2022-04-01,Peanut Butter,68
+2022-04-01,Snickerdoodle,39
+2022-04-02,Chocolate Chip,24
+2022-04-02,Oatmeal Raisin,95
+2022-04-02,Sugar,32
+2022-04-02,Peanut Butter,76
+2022-04-02,Snickerdoodle,39
+2022-04-03,Chocolate Chip,72
+2022-04-03,Oatmeal Raisin,39
+2022-04-03,Sugar,53
+2022-04-03,Peanut Butter,70
+2022-04-03,Snickerdoodle,62
+2022-04-04,Chocolate Chip,88
+2022-04-04,Oatmeal Raisin,60
+2022-04-04,Sugar,82
+2022-04-04,Peanut Butter,24
+2022-04-04,Snickerdoodle,50
+2022-04-05,Chocolate Chip,56
+2022-04-05,Oatmeal Raisin,31
+2022-04-05,Sugar,32
+2022-04-05,Peanut Butter,32
+2022-04-05,Snickerdoodle,58
+2022-04-06,Chocolate Chip,25
+2022-04-06,Oatmeal Raisin,27
+2022-04-06,Sugar,67
+2022-04-06,Peanut Butter,51
+2022-04-06,Snickerdoodle,92
+2022-04-07,Chocolate Chip,43
+2022-04-07,Oatmeal Raisin,30
+2022-04-07,Sugar,68
+2022-04-07,Peanut Butter,50
+2022-04-07,Snickerdoodle,94
+2022-04-08,Chocolate Chip,79
+2022-04-08,Oatmeal Raisin,78
+2022-04-08,Sugar,21
+2022-04-08,Peanut Butter,79
+2022-04-08,Snickerdoodle,89
+2022-04-09,Chocolate Chip,76
+2022-04-09,Oatmeal Raisin,95
+2022-04-09,Sugar,74
+2022-04-09,Peanut Butter,78
+2022-04-09,Snickerdoodle,45
+2022-04-10,Chocolate Chip,81
+2022-04-10,Oatmeal Raisin,68
+2022-04-10,Sugar,93
+2022-04-10,Peanut Butter,114
+2022-04-10,Snickerdoodle,70
+2022-04-11,Chocolate Chip,92
+2022-04-11,Oatmeal Raisin,26
+2022-04-11,Sugar,83
+2022-04-11,Peanut Butter,56
+2022-04-11,Snickerdoodle,49
+2022-04-12,Chocolate Chip,65
+2022-04-12,Oatmeal Raisin,44
+2022-04-12,Sugar,37
+2022-04-12,Peanut Butter,100
+2022-04-12,Snickerdoodle,59
+2022-04-13,Chocolate Chip,24
+2022-04-13,Oatmeal Raisin,36
+2022-04-13,Sugar,57
+2022-04-13,Peanut Butter,73
+2022-04-13,Snickerdoodle,36
+2022-04-14,Chocolate Chip,66
+2022-04-14,Oatmeal Raisin,54
+2022-04-14,Sugar,52
+2022-04-14,Peanut Butter,81
+2022-04-14,Snickerdoodle,57
+2022-04-15,Chocolate Chip,63
+2022-04-15,Oatmeal Raisin,79
+2022-04-15,Sugar,38
+2022-04-15,Peanut Butter,48
+2022-04-15,Snickerdoodle,70
+2022-04-16,Chocolate Chip,91
+2022-04-16,Oatmeal Raisin,140
+2022-04-16,Sugar,35
+2022-04-16,Peanut Butter,53
+2022-04-16,Snickerdoodle,67
+2022-04-17,Chocolate Chip,49
+2022-04-17,Oatmeal Raisin,99
+2022-04-17,Sugar,91
+2022-04-17,Peanut Butter,98
+2022-04-17,Snickerdoodle,28
+2022-04-18,Chocolate Chip,79
+2022-04-18,Oatmeal Raisin,58
+2022-04-18,Sugar,34
+2022-04-18,Peanut Butter,24
+2022-04-18,Snickerdoodle,83
+2022-04-19,Chocolate Chip,50
+2022-04-19,Oatmeal Raisin,37
+2022-04-19,Sugar,67
+2022-04-19,Peanut Butter,89
+2022-04-19,Snickerdoodle,39
+2022-04-20,Chocolate Chip,32
+2022-04-20,Oatmeal Raisin,98
+2022-04-20,Sugar,82
+2022-04-20,Peanut Butter,47
+2022-04-20,Snickerdoodle,50
+2022-04-21,Chocolate Chip,32
+2022-04-21,Oatmeal Raisin,67
+2022-04-21,Sugar,65
+2022-04-21,Peanut Butter,55
+2022-04-21,Snickerdoodle,35
+2022-04-22,Chocolate Chip,78
+2022-04-22,Oatmeal Raisin,47
+2022-04-22,Sugar,96
+2022-04-22,Peanut Butter,26
+2022-04-22,Snickerdoodle,51
+2022-04-23,Chocolate Chip,92
+2022-04-23,Oatmeal Raisin,90
+2022-04-23,Sugar,47
+2022-04-23,Peanut Butter,49
+2022-04-23,Snickerdoodle,38
+2022-04-24,Chocolate Chip,48
+2022-04-24,Oatmeal Raisin,36
+2022-04-24,Sugar,42
+2022-04-24,Peanut Butter,23
+2022-04-24,Snickerdoodle,65
+2022-04-25,Chocolate Chip,50
+2022-04-25,Oatmeal Raisin,22
+2022-04-25,Sugar,26
+2022-04-25,Peanut Butter,73
+2022-04-25,Snickerdoodle,28
+2022-04-26,Chocolate Chip,66
+2022-04-26,Oatmeal Raisin,33
+2022-04-26,Sugar,48
+2022-04-26,Peanut Butter,25
+2022-04-26,Snickerdoodle,86
+2022-04-27,Chocolate Chip,23
+2022-04-27,Oatmeal Raisin,81
+2022-04-27,Sugar,74
+2022-04-27,Peanut Butter,82
+2022-04-27,Snickerdoodle,76
+2022-04-28,Chocolate Chip,30
+2022-04-28,Oatmeal Raisin,38
+2022-04-28,Sugar,55
+2022-04-28,Peanut Butter,94
+2022-04-28,Snickerdoodle,61
+2022-04-29,Chocolate Chip,96
+2022-04-29,Oatmeal Raisin,78
+2022-04-29,Sugar,75
+2022-04-29,Peanut Butter,34
+2022-04-29,Snickerdoodle,90
+2022-04-30,Chocolate Chip,47
+2022-04-30,Oatmeal Raisin,49
+2022-04-30,Sugar,78
+2022-04-30,Peanut Butter,32
+2022-04-30,Snickerdoodle,60
+2022-05-01,Chocolate Chip,67
+2022-05-01,Oatmeal Raisin,80
+2022-05-01,Sugar,30
+2022-05-01,Peanut Butter,32
+2022-05-01,Snickerdoodle,67
+2022-05-02,Chocolate Chip,91
+2022-05-02,Oatmeal Raisin,91
+2022-05-02,Sugar,35
+2022-05-02,Peanut Butter,74
+2022-05-02,Snickerdoodle,26
+2022-05-03,Chocolate Chip,96
+2022-05-03,Oatmeal Raisin,33
+2022-05-03,Sugar,47
+2022-05-03,Peanut Butter,81
+2022-05-03,Snickerdoodle,33
+2022-05-04,Chocolate Chip,91
+2022-05-04,Oatmeal Raisin,55
+2022-05-04,Sugar,74
+2022-05-04,Peanut Butter,99
+2022-05-04,Snickerdoodle,182
+2022-05-05,Chocolate Chip,81
+2022-05-05,Oatmeal Raisin,59
+2022-05-05,Sugar,32
+2022-05-05,Peanut Butter,92
+2022-05-05,Snickerdoodle,28
+2022-05-06,Chocolate Chip,23
+2022-05-06,Oatmeal Raisin,87
+2022-05-06,Sugar,73
+2022-05-06,Peanut Butter,40
+2022-05-06,Snickerdoodle,61
+2022-05-07,Chocolate Chip,92
+2022-05-07,Oatmeal Raisin,26
+2022-05-07,Sugar,49
+2022-05-07,Peanut Butter,54
+2022-05-07,Snickerdoodle,74
+2022-05-08,Chocolate Chip,76
+2022-05-08,Oatmeal Raisin,47
+2022-05-08,Sugar,34
+2022-05-08,Peanut Butter,34
+2022-05-08,Snickerdoodle,95
+2022-05-09,Chocolate Chip,88
+2022-05-09,Oatmeal Raisin,96
+2022-05-09,Sugar,46
+2022-05-09,Peanut Butter,47
+2022-05-09,Snickerdoodle,52
+2022-05-10,Chocolate Chip,70
+2022-05-10,Oatmeal Raisin,75
+2022-05-10,Sugar,68
+2022-05-10,Peanut Butter,49
+2022-05-10,Snickerdoodle,65
+2022-05-11,Chocolate Chip,25
+2022-05-11,Oatmeal Raisin,78
+2022-05-11,Sugar,60
+2022-05-11,Peanut Butter,93
+2022-05-11,Snickerdoodle,73
+2022-05-12,Chocolate Chip,106
+2022-05-12,Oatmeal Raisin,41
+2022-05-12,Sugar,99
+2022-05-12,Peanut Butter,66
+2022-05-12,Snickerdoodle,33
+2022-05-13,Chocolate Chip,95
+2022-05-13,Oatmeal Raisin,30
+2022-05-13,Sugar,59
+2022-05-13,Peanut Butter,48
+2022-05-13,Snickerdoodle,41
+2022-05-14,Chocolate Chip,34
+2022-05-14,Oatmeal Raisin,44
+2022-05-14,Sugar,64
+2022-05-14,Peanut Butter,38
+2022-05-14,Snickerdoodle,38
+2022-05-15,Chocolate Chip,42
+2022-05-15,Oatmeal Raisin,29
+2022-05-15,Sugar,100
+2022-05-15,Peanut Butter,92
+2022-05-15,Snickerdoodle,77
+2022-05-16,Chocolate Chip,92
+2022-05-16,Oatmeal Raisin,99
+2022-05-16,Sugar,100
+2022-05-16,Peanut Butter,76
+2022-05-16,Snickerdoodle,76
+2022-05-17,Chocolate Chip,55
+2022-05-17,Oatmeal Raisin,65
+2022-05-17,Sugar,59
+2022-05-17,Peanut Butter,24
+2022-05-17,Snickerdoodle,56
+2022-05-18,Chocolate Chip,31
+2022-05-18,Oatmeal Raisin,84
+2022-05-18,Sugar,94
+2022-05-18,Peanut Butter,25
+2022-05-18,Snickerdoodle,93
+2022-05-19,Chocolate Chip,61
+2022-05-19,Oatmeal Raisin,84
+2022-05-19,Sugar,27
+2022-05-19,Peanut Butter,63
+2022-05-19,Snickerdoodle,30
+2022-05-20,Chocolate Chip,84
+2022-05-20,Oatmeal Raisin,76
+2022-05-20,Sugar,87
+2022-05-20,Peanut Butter,40
+2022-05-20,Snickerdoodle,56
+2022-05-21,Chocolate Chip,63
+2022-05-21,Oatmeal Raisin,26
+2022-05-21,Sugar,62
+2022-05-21,Peanut Butter,32
+2022-05-21,Snickerdoodle,69
+2022-05-22,Chocolate Chip,97
+2022-05-22,Oatmeal Raisin,62
+2022-05-22,Sugar,38
+2022-05-22,Peanut Butter,59
+2022-05-22,Snickerdoodle,70
+2022-05-23,Chocolate Chip,30
+2022-05-23,Oatmeal Raisin,68
+2022-05-23,Sugar,62
+2022-05-23,Peanut Butter,87
+2022-05-23,Snickerdoodle,74
+2022-05-24,Chocolate Chip,22
+2022-05-24,Oatmeal Raisin,43
+2022-05-24,Sugar,63
+2022-05-24,Peanut Butter,82
+2022-05-24,Snickerdoodle,37
+2022-05-25,Chocolate Chip,57
+2022-05-25,Oatmeal Raisin,32
+2022-05-25,Sugar,89
+2022-05-25,Peanut Butter,130
+2022-05-25,Snickerdoodle,99
+2022-05-26,Chocolate Chip,68
+2022-05-26,Oatmeal Raisin,43
+2022-05-26,Sugar,99
+2022-05-26,Peanut Butter,41
+2022-05-26,Snickerdoodle,25
+2022-05-27,Chocolate Chip,50
+2022-05-27,Oatmeal Raisin,98
+2022-05-27,Sugar,77
+2022-05-27,Peanut Butter,50
+2022-05-27,Snickerdoodle,80
+2022-05-28,Chocolate Chip,44
+2022-05-28,Oatmeal Raisin,93
+2022-05-28,Sugar,79
+2022-05-28,Peanut Butter,68
+2022-05-28,Snickerdoodle,73
+2022-05-29,Chocolate Chip,45
+2022-05-29,Oatmeal Raisin,37
+2022-05-29,Sugar,26
+2022-05-29,Peanut Butter,67
+2022-05-29,Snickerdoodle,33
+2022-05-30,Chocolate Chip,86
+2022-05-30,Oatmeal Raisin,56
+2022-05-30,Sugar,40
+2022-05-30,Peanut Butter,85
+2022-05-30,Snickerdoodle,75
+2022-05-31,Chocolate Chip,48
+2022-05-31,Oatmeal Raisin,64
+2022-05-31,Sugar,73
+2022-05-31,Peanut Butter,84
+2022-05-31,Snickerdoodle,69
+2022-06-01,Chocolate Chip,67
+2022-06-01,Oatmeal Raisin,60
+2022-06-01,Sugar,62
+2022-06-01,Peanut Butter,55
+2022-06-01,Snickerdoodle,37
+2022-06-02,Chocolate Chip,80
+2022-06-02,Oatmeal Raisin,20
+2022-06-02,Sugar,22
+2022-06-02,Peanut Butter,39
+2022-06-02,Snickerdoodle,97
+2022-06-03,Chocolate Chip,34
+2022-06-03,Oatmeal Raisin,50
+2022-06-03,Sugar,26
+2022-06-03,Peanut Butter,99
+2022-06-03,Snickerdoodle,34
+2022-06-04,Chocolate Chip,83
+2022-06-04,Oatmeal Raisin,22
+2022-06-04,Sugar,93
+2022-06-04,Peanut Butter,38
+2022-06-04,Snickerdoodle,20
+2022-06-05,Chocolate Chip,50
+2022-06-05,Oatmeal Raisin,43
+2022-06-05,Sugar,30
+2022-06-05,Peanut Butter,66
+2022-06-05,Snickerdoodle,87
+2022-06-06,Chocolate Chip,84
+2022-06-06,Oatmeal Raisin,69
+2022-06-06,Sugar,25
+2022-06-06,Peanut Butter,67
+2022-06-06,Snickerdoodle,22
+2022-06-07,Chocolate Chip,28
+2022-06-07,Oatmeal Raisin,100
+2022-06-07,Sugar,94
+2022-06-07,Peanut Butter,62
+2022-06-07,Snickerdoodle,65
+2022-06-08,Chocolate Chip,42
+2022-06-08,Oatmeal Raisin,79
+2022-06-08,Sugar,81
+2022-06-08,Peanut Butter,37
+2022-06-08,Snickerdoodle,39
+2022-06-09,Chocolate Chip,25
+2022-06-09,Oatmeal Raisin,25
+2022-06-09,Sugar,59
+2022-06-09,Peanut Butter,89
+2022-06-09,Snickerdoodle,24
+2022-06-10,Chocolate Chip,44
+2022-06-10,Oatmeal Raisin,26
+2022-06-10,Sugar,62
+2022-06-10,Peanut Butter,67
+2022-06-10,Snickerdoodle,71
+2022-06-11,Chocolate Chip,69
+2022-06-11,Oatmeal Raisin,43
+2022-06-11,Sugar,83
+2022-06-11,Peanut Butter,86
+2022-06-11,Snickerdoodle,30
+2022-06-12,Chocolate Chip,30
+2022-06-12,Oatmeal Raisin,43
+2022-06-12,Sugar,61
+2022-06-12,Peanut Butter,61
+2022-06-12,Snickerdoodle,59
+2022-06-13,Chocolate Chip,74
+2022-06-13,Oatmeal Raisin,76
+2022-06-13,Sugar,25
+2022-06-13,Peanut Butter,65
+2022-06-13,Snickerdoodle,75
+2022-06-14,Chocolate Chip,27
+2022-06-14,Oatmeal Raisin,71
+2022-06-14,Sugar,40
+2022-06-14,Peanut Butter,38
+2022-06-14,Snickerdoodle,38
+2022-06-15,Chocolate Chip,50
+2022-06-15,Oatmeal Raisin,66
+2022-06-15,Sugar,46
+2022-06-15,Peanut Butter,77
+2022-06-15,Snickerdoodle,67
+2022-06-16,Chocolate Chip,29
+2022-06-16,Oatmeal Raisin,87
+2022-06-16,Sugar,60
+2022-06-16,Peanut Butter,51
+2022-06-16,Snickerdoodle,23
+2022-06-17,Chocolate Chip,83
+2022-06-17,Oatmeal Raisin,91
+2022-06-17,Sugar,53
+2022-06-17,Peanut Butter,47
+2022-06-17,Snickerdoodle,56
+2022-06-18,Chocolate Chip,82
+2022-06-18,Oatmeal Raisin,37
+2022-06-18,Sugar,77
+2022-06-18,Peanut Butter,76
+2022-06-18,Snickerdoodle,60
+2022-06-19,Chocolate Chip,28
+2022-06-19,Oatmeal Raisin,57
+2022-06-19,Sugar,40
+2022-06-19,Peanut Butter,42
+2022-06-19,Snickerdoodle,85
+2022-06-20,Chocolate Chip,45
+2022-06-20,Oatmeal Raisin,50
+2022-06-20,Sugar,23
+2022-06-20,Peanut Butter,93
+2022-06-20,Snickerdoodle,90
+2022-06-21,Chocolate Chip,31
+2022-06-21,Oatmeal Raisin,70
+2022-06-21,Sugar,81
+2022-06-21,Peanut Butter,72
+2022-06-21,Snickerdoodle,29
+2022-06-22,Chocolate Chip,60
+2022-06-22,Oatmeal Raisin,77
+2022-06-22,Sugar,86
+2022-06-22,Peanut Butter,90
+2022-06-22,Snickerdoodle,43
+2022-06-23,Chocolate Chip,36
+2022-06-23,Oatmeal Raisin,27
+2022-06-23,Sugar,86
+2022-06-23,Peanut Butter,41
+2022-06-23,Snickerdoodle,48
+2022-06-24,Chocolate Chip,86
+2022-06-24,Oatmeal Raisin,30
+2022-06-24,Sugar,90
+2022-06-24,Peanut Butter,100
+2022-06-24,Snickerdoodle,88
+2022-06-25,Chocolate Chip,41
+2022-06-25,Oatmeal Raisin,94
+2022-06-25,Sugar,99
+2022-06-25,Peanut Butter,97
+2022-06-25,Snickerdoodle,46
+2022-06-26,Chocolate Chip,60
+2022-06-26,Oatmeal Raisin,93
+2022-06-26,Sugar,46
+2022-06-26,Peanut Butter,73
+2022-06-26,Snickerdoodle,23
+2022-06-27,Chocolate Chip,100
+2022-06-27,Oatmeal Raisin,58
+2022-06-27,Sugar,71
+2022-06-27,Peanut Butter,29
+2022-06-27,Snickerdoodle,40
+2022-06-28,Chocolate Chip,81
+2022-06-28,Oatmeal Raisin,63
+2022-06-28,Sugar,60
+2022-06-28,Peanut Butter,60
+2022-06-28,Snickerdoodle,64
+2022-06-29,Chocolate Chip,36
+2022-06-29,Oatmeal Raisin,85
+2022-06-29,Sugar,60
+2022-06-29,Peanut Butter,35
+2022-06-29,Snickerdoodle,51
+2022-06-30,Chocolate Chip,26
+2022-06-30,Oatmeal Raisin,69
+2022-06-30,Sugar,73
+2022-06-30,Peanut Butter,40
+2022-06-30,Snickerdoodle,93
+2022-07-01,Chocolate Chip,44
+2022-07-01,Oatmeal Raisin,83
+2022-07-01,Sugar,79
+2022-07-01,Peanut Butter,59
+2022-07-01,Snickerdoodle,31
+2022-07-02,Chocolate Chip,84
+2022-07-02,Oatmeal Raisin,50
+2022-07-02,Sugar,97
+2022-07-02,Peanut Butter,83
+2022-07-02,Snickerdoodle,80
+2022-07-03,Chocolate Chip,21
+2022-07-03,Oatmeal Raisin,75
+2022-07-03,Sugar,53
+2022-07-03,Peanut Butter,71
+2022-07-03,Snickerdoodle,71
+2022-07-04,Chocolate Chip,91
+2022-07-04,Oatmeal Raisin,90
+2022-07-04,Sugar,69
+2022-07-04,Peanut Butter,90
+2022-07-04,Snickerdoodle,99
+2022-07-05,Chocolate Chip,35
+2022-07-05,Oatmeal Raisin,32
+2022-07-05,Sugar,63
+2022-07-05,Peanut Butter,66
+2022-07-05,Snickerdoodle,45
+2022-07-06,Chocolate Chip,71
+2022-07-06,Oatmeal Raisin,50
+2022-07-06,Sugar,62
+2022-07-06,Peanut Butter,86
+2022-07-06,Snickerdoodle,97
+2022-07-07,Chocolate Chip,37
+2022-07-07,Oatmeal Raisin,98
+2022-07-07,Sugar,70
+2022-07-07,Peanut Butter,58
+2022-07-07,Snickerdoodle,84
+2022-07-08,Chocolate Chip,88
+2022-07-08,Oatmeal Raisin,92
+2022-07-08,Sugar,22
+2022-07-08,Peanut Butter,34
+2022-07-08,Snickerdoodle,94
+2022-07-09,Chocolate Chip,150
+2022-07-09,Oatmeal Raisin,53
+2022-07-09,Sugar,94
+2022-07-09,Peanut Butter,26
+2022-07-09,Snickerdoodle,41
+2022-07-10,Chocolate Chip,99
+2022-07-10,Oatmeal Raisin,68
+2022-07-10,Sugar,102
+2022-07-10,Peanut Butter,34
+2022-07-10,Snickerdoodle,76
+2022-07-11,Chocolate Chip,39
+2022-07-11,Oatmeal Raisin,46
+2022-07-11,Sugar,98
+2022-07-11,Peanut Butter,27
+2022-07-11,Snickerdoodle,86
+2022-07-12,Chocolate Chip,61
+2022-07-12,Oatmeal Raisin,81
+2022-07-12,Sugar,60
+2022-07-12,Peanut Butter,78
+2022-07-12,Snickerdoodle,63
+2022-07-13,Chocolate Chip,53
+2022-07-13,Oatmeal Raisin,44
+2022-07-13,Sugar,55
+2022-07-13,Peanut Butter,48
+2022-07-13,Snickerdoodle,58
+2022-07-14,Chocolate Chip,46
+2022-07-14,Oatmeal Raisin,82
+2022-07-14,Sugar,64
+2022-07-14,Peanut Butter,55
+2022-07-14,Snickerdoodle,93
+2022-07-15,Chocolate Chip,68
+2022-07-15,Oatmeal Raisin,70
+2022-07-15,Sugar,38
+2022-07-15,Peanut Butter,56
+2022-07-15,Snickerdoodle,30
+2022-07-16,Chocolate Chip,76
+2022-07-16,Oatmeal Raisin,81
+2022-07-16,Sugar,88
+2022-07-16,Peanut Butter,91
+2022-07-16,Snickerdoodle,37
+2022-07-17,Chocolate Chip,95
+2022-07-17,Oatmeal Raisin,26
+2022-07-17,Sugar,87
+2022-07-17,Peanut Butter,49
+2022-07-17,Snickerdoodle,72
+2022-07-18,Chocolate Chip,80
+2022-07-18,Oatmeal Raisin,74
+2022-07-18,Sugar,40
+2022-07-18,Peanut Butter,80
+2022-07-18,Snickerdoodle,45
+2022-07-19,Chocolate Chip,56
+2022-07-19,Oatmeal Raisin,27
+2022-07-19,Sugar,31
+2022-07-19,Peanut Butter,49
+2022-07-19,Snickerdoodle,24
+2022-07-20,Chocolate Chip,42
+2022-07-20,Oatmeal Raisin,42
+2022-07-20,Sugar,24
+2022-07-20,Peanut Butter,70
+2022-07-20,Snickerdoodle,43
+2022-07-21,Chocolate Chip,57
+2022-07-21,Oatmeal Raisin,21
+2022-07-21,Sugar,97
+2022-07-21,Peanut Butter,62
+2022-07-21,Snickerdoodle,89
+2022-07-22,Chocolate Chip,37
+2022-07-22,Oatmeal Raisin,79
+2022-07-22,Sugar,34
+2022-07-22,Peanut Butter,78
+2022-07-22,Snickerdoodle,64
+2022-07-23,Chocolate Chip,57
+2022-07-23,Oatmeal Raisin,44
+2022-07-23,Sugar,71
+2022-07-23,Peanut Butter,85
+2022-07-23,Snickerdoodle,71
+2022-07-24,Chocolate Chip,43
+2022-07-24,Oatmeal Raisin,81
+2022-07-24,Sugar,76
+2022-07-24,Peanut Butter,50
+2022-07-24,Snickerdoodle,54
+2022-07-25,Chocolate Chip,58
+2022-07-25,Oatmeal Raisin,186
+2022-07-25,Sugar,66
+2022-07-25,Peanut Butter,27
+2022-07-25,Snickerdoodle,79
+2022-07-26,Chocolate Chip,71
+2022-07-26,Oatmeal Raisin,59
+2022-07-26,Sugar,57
+2022-07-26,Peanut Butter,48
+2022-07-26,Snickerdoodle,37
+2022-07-27,Chocolate Chip,78
+2022-07-27,Oatmeal Raisin,97
+2022-07-27,Sugar,90
+2022-07-27,Peanut Butter,88
+2022-07-27,Snickerdoodle,47
+2022-07-28,Chocolate Chip,96
+2022-07-28,Oatmeal Raisin,30
+2022-07-28,Sugar,87
+2022-07-28,Peanut Butter,29
+2022-07-28,Snickerdoodle,34
+2022-07-29,Chocolate Chip,90
+2022-07-29,Oatmeal Raisin,45
+2022-07-29,Sugar,39
+2022-07-29,Peanut Butter,86
+2022-07-29,Snickerdoodle,46
+2022-07-30,Chocolate Chip,82
+2022-07-30,Oatmeal Raisin,85
+2022-07-30,Sugar,27
+2022-07-30,Peanut Butter,85
+2022-07-30,Snickerdoodle,92
+2022-07-31,Chocolate Chip,79
+2022-07-31,Oatmeal Raisin,59
+2022-07-31,Sugar,70
+2022-07-31,Peanut Butter,20
+2022-07-31,Snickerdoodle,94
+2022-08-01,Chocolate Chip,74
+2022-08-01,Oatmeal Raisin,28
+2022-08-01,Sugar,27
+2022-08-01,Peanut Butter,28
+2022-08-01,Snickerdoodle,120
+2022-08-02,Chocolate Chip,43
+2022-08-02,Oatmeal Raisin,73
+2022-08-02,Sugar,68
+2022-08-02,Peanut Butter,68
+2022-08-02,Snickerdoodle,89
+2022-08-03,Chocolate Chip,64
+2022-08-03,Oatmeal Raisin,88
+2022-08-03,Sugar,36
+2022-08-03,Peanut Butter,48
+2022-08-03,Snickerdoodle,22
+2022-08-04,Chocolate Chip,79
+2022-08-04,Oatmeal Raisin,89
+2022-08-04,Sugar,68
+2022-08-04,Peanut Butter,51
+2022-08-04,Snickerdoodle,39
+2022-08-05,Chocolate Chip,68
+2022-08-05,Oatmeal Raisin,73
+2022-08-05,Sugar,22
+2022-08-05,Peanut Butter,28
+2022-08-05,Snickerdoodle,24
+2022-08-06,Chocolate Chip,26
+2022-08-06,Oatmeal Raisin,25
+2022-08-06,Sugar,49
+2022-08-06,Peanut Butter,27
+2022-08-06,Snickerdoodle,57
+2022-08-07,Chocolate Chip,93
+2022-08-07,Oatmeal Raisin,96
+2022-08-07,Sugar,61
+2022-08-07,Peanut Butter,38
+2022-08-07,Snickerdoodle,86
+2022-08-08,Chocolate Chip,58
+2022-08-08,Oatmeal Raisin,91
+2022-08-08,Sugar,42
+2022-08-08,Peanut Butter,74
+2022-08-08,Snickerdoodle,26
+2022-08-09,Chocolate Chip,68
+2022-08-09,Oatmeal Raisin,60
+2022-08-09,Sugar,72
+2022-08-09,Peanut Butter,68
+2022-08-09,Snickerdoodle,88
+2022-08-10,Chocolate Chip,48
+2022-08-10,Oatmeal Raisin,38
+2022-08-10,Sugar,27
+2022-08-10,Peanut Butter,73
+2022-08-10,Snickerdoodle,37
+2022-08-11,Chocolate Chip,52
+2022-08-11,Oatmeal Raisin,30
+2022-08-11,Sugar,67
+2022-08-11,Peanut Butter,44
+2022-08-11,Snickerdoodle,68
+2022-08-12,Chocolate Chip,48
+2022-08-12,Oatmeal Raisin,44
+2022-08-12,Sugar,95
+2022-08-12,Peanut Butter,91
+2022-08-12,Snickerdoodle,46
+2022-08-13,Chocolate Chip,62
+2022-08-13,Oatmeal Raisin,21
+2022-08-13,Sugar,44
+2022-08-13,Peanut Butter,35
+2022-08-13,Snickerdoodle,81
+2022-08-14,Chocolate Chip,97
+2022-08-14,Oatmeal Raisin,70
+2022-08-14,Sugar,90
+2022-08-14,Peanut Butter,56
+2022-08-14,Snickerdoodle,88
+2022-08-15,Chocolate Chip,59
+2022-08-15,Oatmeal Raisin,85
+2022-08-15,Sugar,79
+2022-08-15,Peanut Butter,80
+2022-08-15,Snickerdoodle,60
+2022-08-16,Chocolate Chip,67
+2022-08-16,Oatmeal Raisin,25
+2022-08-16,Sugar,48
+2022-08-16,Peanut Butter,22
+2022-08-16,Snickerdoodle,94
+2022-08-17,Chocolate Chip,73
+2022-08-17,Oatmeal Raisin,45
+2022-08-17,Sugar,68
+2022-08-17,Peanut Butter,51
+2022-08-17,Snickerdoodle,63
+2022-08-18,Chocolate Chip,82
+2022-08-18,Oatmeal Raisin,82
+2022-08-18,Sugar,65
+2022-08-18,Peanut Butter,89
+2022-08-18,Snickerdoodle,89
+2022-08-19,Chocolate Chip,27
+2022-08-19,Oatmeal Raisin,29
+2022-08-19,Sugar,26
+2022-08-19,Peanut Butter,72
+2022-08-19,Snickerdoodle,100
+2022-08-20,Chocolate Chip,78
+2022-08-20,Oatmeal Raisin,78
+2022-08-20,Sugar,99
+2022-08-20,Peanut Butter,98
+2022-08-20,Snickerdoodle,164
+2022-08-21,Chocolate Chip,90
+2022-08-21,Oatmeal Raisin,22
+2022-08-21,Sugar,55
+2022-08-21,Peanut Butter,112
+2022-08-21,Snickerdoodle,75
+2022-08-22,Chocolate Chip,42
+2022-08-22,Oatmeal Raisin,32
+2022-08-22,Sugar,50
+2022-08-22,Peanut Butter,87
+2022-08-22,Snickerdoodle,65
+2022-08-23,Chocolate Chip,70
+2022-08-23,Oatmeal Raisin,71
+2022-08-23,Sugar,51
+2022-08-23,Peanut Butter,48
+2022-08-23,Snickerdoodle,30
+2022-08-24,Chocolate Chip,24
+2022-08-24,Oatmeal Raisin,68
+2022-08-24,Sugar,80
+2022-08-24,Peanut Butter,21
+2022-08-24,Snickerdoodle,30
+2022-08-25,Chocolate Chip,75
+2022-08-25,Oatmeal Raisin,62
+2022-08-25,Sugar,32
+2022-08-25,Peanut Butter,25
+2022-08-25,Snickerdoodle,92
+2022-08-26,Chocolate Chip,25
+2022-08-26,Oatmeal Raisin,55
+2022-08-26,Sugar,92
+2022-08-26,Peanut Butter,42
+2022-08-26,Snickerdoodle,30
+2022-08-27,Chocolate Chip,95
+2022-08-27,Oatmeal Raisin,70
+2022-08-27,Sugar,58
+2022-08-27,Peanut Butter,50
+2022-08-27,Snickerdoodle,69
+2022-08-28,Chocolate Chip,89
+2022-08-28,Oatmeal Raisin,37
+2022-08-28,Sugar,30
+2022-08-28,Peanut Butter,64
+2022-08-28,Snickerdoodle,75
+2022-08-29,Chocolate Chip,29
+2022-08-29,Oatmeal Raisin,98
+2022-08-29,Sugar,70
+2022-08-29,Peanut Butter,91
+2022-08-29,Snickerdoodle,77
+2022-08-30,Chocolate Chip,65
+2022-08-30,Oatmeal Raisin,68
+2022-08-30,Sugar,94
+2022-08-30,Peanut Butter,30
+2022-08-30,Snickerdoodle,57
+2022-08-31,Chocolate Chip,29
+2022-08-31,Oatmeal Raisin,39
+2022-08-31,Sugar,39
+2022-08-31,Peanut Butter,60
+2022-08-31,Snickerdoodle,46
+2022-09-01,Chocolate Chip,76
+2022-09-01,Oatmeal Raisin,54
+2022-09-01,Sugar,31
+2022-09-01,Peanut Butter,77
+2022-09-01,Snickerdoodle,85
+2022-09-02,Chocolate Chip,23
+2022-09-02,Oatmeal Raisin,90
+2022-09-02,Sugar,96
+2022-09-02,Peanut Butter,103
+2022-09-02,Snickerdoodle,69
+2022-09-03,Chocolate Chip,91
+2022-09-03,Oatmeal Raisin,51
+2022-09-03,Sugar,41
+2022-09-03,Peanut Butter,41
+2022-09-03,Snickerdoodle,58
+2022-09-04,Chocolate Chip,38
+2022-09-04,Oatmeal Raisin,75
+2022-09-04,Sugar,58
+2022-09-04,Peanut Butter,29
+2022-09-04,Snickerdoodle,51
+2022-09-05,Chocolate Chip,83
+2022-09-05,Oatmeal Raisin,45
+2022-09-05,Sugar,37
+2022-09-05,Peanut Butter,70
+2022-09-05,Snickerdoodle,99
+2022-09-06,Chocolate Chip,62
+2022-09-06,Oatmeal Raisin,75
+2022-09-06,Sugar,96
+2022-09-06,Peanut Butter,61
+2022-09-06,Snickerdoodle,45
+2022-09-07,Chocolate Chip,42
+2022-09-07,Oatmeal Raisin,60
+2022-09-07,Sugar,82
+2022-09-07,Peanut Butter,51
+2022-09-07,Snickerdoodle,55
+2022-09-08,Chocolate Chip,70
+2022-09-08,Oatmeal Raisin,92
+2022-09-08,Sugar,89
+2022-09-08,Peanut Butter,180
+2022-09-08,Snickerdoodle,79
+2022-09-09,Chocolate Chip,46
+2022-09-09,Oatmeal Raisin,57
+2022-09-09,Sugar,28
+2022-09-09,Peanut Butter,72
+2022-09-09,Snickerdoodle,37
+2022-09-10,Chocolate Chip,50
+2022-09-10,Oatmeal Raisin,39
+2022-09-10,Sugar,68
+2022-09-10,Peanut Butter,96
+2022-09-10,Snickerdoodle,71
+2022-09-11,Chocolate Chip,73
+2022-09-11,Oatmeal Raisin,66
+2022-09-11,Sugar,88
+2022-09-11,Peanut Butter,30
+2022-09-11,Snickerdoodle,51
+2022-09-12,Chocolate Chip,65
+2022-09-12,Oatmeal Raisin,196
+2022-09-12,Sugar,71
+2022-09-12,Peanut Butter,62
+2022-09-12,Snickerdoodle,75
+2022-09-13,Chocolate Chip,32
+2022-09-13,Oatmeal Raisin,85
+2022-09-13,Sugar,91
+2022-09-13,Peanut Butter,93
+2022-09-13,Snickerdoodle,67
+2022-09-14,Chocolate Chip,95
+2022-09-14,Oatmeal Raisin,39
+2022-09-14,Sugar,23
+2022-09-14,Peanut Butter,57
+2022-09-14,Snickerdoodle,30
+2022-09-15,Chocolate Chip,38
+2022-09-15,Oatmeal Raisin,63
+2022-09-15,Sugar,46
+2022-09-15,Peanut Butter,64
+2022-09-15,Snickerdoodle,76
+2022-09-16,Chocolate Chip,77
+2022-09-16,Oatmeal Raisin,116
+2022-09-16,Sugar,51
+2022-09-16,Peanut Butter,33
+2022-09-16,Snickerdoodle,41
+2022-09-17,Chocolate Chip,51
+2022-09-17,Oatmeal Raisin,90
+2022-09-17,Sugar,91
+2022-09-17,Peanut Butter,79
+2022-09-17,Snickerdoodle,71
+2022-09-18,Chocolate Chip,43
+2022-09-18,Oatmeal Raisin,75
+2022-09-18,Sugar,98
+2022-09-18,Peanut Butter,77
+2022-09-18,Snickerdoodle,34
+2022-09-19,Chocolate Chip,46
+2022-09-19,Oatmeal Raisin,28
+2022-09-19,Sugar,88
+2022-09-19,Peanut Butter,61
+2022-09-19,Snickerdoodle,34
+2022-09-20,Chocolate Chip,82
+2022-09-20,Oatmeal Raisin,60
+2022-09-20,Sugar,98
+2022-09-20,Peanut Butter,34
+2022-09-20,Snickerdoodle,78
+2022-09-21,Chocolate Chip,58
+2022-09-21,Oatmeal Raisin,95
+2022-09-21,Sugar,37
+2022-09-21,Peanut Butter,50
+2022-09-21,Snickerdoodle,43
+2022-09-22,Chocolate Chip,38
+2022-09-22,Oatmeal Raisin,73
+2022-09-22,Sugar,93
+2022-09-22,Peanut Butter,43
+2022-09-22,Snickerdoodle,88
+2022-09-23,Chocolate Chip,42
+2022-09-23,Oatmeal Raisin,82
+2022-09-23,Sugar,43
+2022-09-23,Peanut Butter,77
+2022-09-23,Snickerdoodle,65
+2022-09-24,Chocolate Chip,82
+2022-09-24,Oatmeal Raisin,69
+2022-09-24,Sugar,84
+2022-09-24,Peanut Butter,72
+2022-09-24,Snickerdoodle,73
+2022-09-25,Chocolate Chip,76
+2022-09-25,Oatmeal Raisin,30
+2022-09-25,Sugar,48
+2022-09-25,Peanut Butter,55
+2022-09-25,Snickerdoodle,56
+2022-09-26,Chocolate Chip,78
+2022-09-26,Oatmeal Raisin,83
+2022-09-26,Sugar,34
+2022-09-26,Peanut Butter,54
+2022-09-26,Snickerdoodle,66
+2022-09-27,Chocolate Chip,25
+2022-09-27,Oatmeal Raisin,76
+2022-09-27,Sugar,74
+2022-09-27,Peanut Butter,51
+2022-09-27,Snickerdoodle,24
+2022-09-28,Chocolate Chip,64
+2022-09-28,Oatmeal Raisin,31
+2022-09-28,Sugar,35
+2022-09-28,Peanut Butter,50
+2022-09-28,Snickerdoodle,95
+2022-09-29,Chocolate Chip,98
+2022-09-29,Oatmeal Raisin,41
+2022-09-29,Sugar,46
+2022-09-29,Peanut Butter,27
+2022-09-29,Snickerdoodle,88
+2022-09-30,Chocolate Chip,88
+2022-09-30,Oatmeal Raisin,57
+2022-09-30,Sugar,54
+2022-09-30,Peanut Butter,85
+2022-09-30,Snickerdoodle,32
+2022-10-01,Chocolate Chip,72
+2022-10-01,Oatmeal Raisin,55
+2022-10-01,Sugar,36
+2022-10-01,Peanut Butter,36
+2022-10-01,Snickerdoodle,61
+2022-10-02,Chocolate Chip,70
+2022-10-02,Oatmeal Raisin,93
+2022-10-02,Sugar,100
+2022-10-02,Peanut Butter,77
+2022-10-02,Snickerdoodle,31
+2022-10-03,Chocolate Chip,55
+2022-10-03,Oatmeal Raisin,67
+2022-10-03,Sugar,82
+2022-10-03,Peanut Butter,20
+2022-10-03,Snickerdoodle,31
+2022-10-04,Chocolate Chip,78
+2022-10-04,Oatmeal Raisin,65
+2022-10-04,Sugar,88
+2022-10-04,Peanut Butter,74
+2022-10-04,Snickerdoodle,83
+2022-10-05,Chocolate Chip,56
+2022-10-05,Oatmeal Raisin,93
+2022-10-05,Sugar,82
+2022-10-05,Peanut Butter,52
+2022-10-05,Snickerdoodle,39
+2022-10-06,Chocolate Chip,76
+2022-10-06,Oatmeal Raisin,74
+2022-10-06,Sugar,36
+2022-10-06,Peanut Butter,58
+2022-10-06,Snickerdoodle,55
+2022-10-07,Chocolate Chip,66
+2022-10-07,Oatmeal Raisin,67
+2022-10-07,Sugar,41
+2022-10-07,Peanut Butter,100
+2022-10-07,Snickerdoodle,49
+2022-10-08,Chocolate Chip,31
+2022-10-08,Oatmeal Raisin,20
+2022-10-08,Sugar,29
+2022-10-08,Peanut Butter,48
+2022-10-08,Snickerdoodle,152
+2022-10-09,Chocolate Chip,63
+2022-10-09,Oatmeal Raisin,74
+2022-10-09,Sugar,81
+2022-10-09,Peanut Butter,69
+2022-10-09,Snickerdoodle,33
+2022-10-10,Chocolate Chip,67
+2022-10-10,Oatmeal Raisin,37
+2022-10-10,Sugar,37
+2022-10-10,Peanut Butter,38
+2022-10-10,Snickerdoodle,184
+2022-10-11,Chocolate Chip,41
+2022-10-11,Oatmeal Raisin,47
+2022-10-11,Sugar,39
+2022-10-11,Peanut Butter,98
+2022-10-11,Snickerdoodle,47
+2022-10-12,Chocolate Chip,32
+2022-10-12,Oatmeal Raisin,35
+2022-10-12,Sugar,69
+2022-10-12,Peanut Butter,74
+2022-10-12,Snickerdoodle,37
+2022-10-13,Chocolate Chip,30
+2022-10-13,Oatmeal Raisin,96
+2022-10-13,Sugar,97
+2022-10-13,Peanut Butter,23
+2022-10-13,Snickerdoodle,58
+2022-10-14,Chocolate Chip,97
+2022-10-14,Oatmeal Raisin,70
+2022-10-14,Sugar,26
+2022-10-14,Peanut Butter,50
+2022-10-14,Snickerdoodle,34
+2022-10-15,Chocolate Chip,96
+2022-10-15,Oatmeal Raisin,21
+2022-10-15,Sugar,60
+2022-10-15,Peanut Butter,92
+2022-10-15,Snickerdoodle,89
+2022-10-16,Chocolate Chip,80
+2022-10-16,Oatmeal Raisin,14
+2022-10-16,Sugar,21
+2022-10-16,Peanut Butter,25
+2022-10-16,Snickerdoodle,70
+2022-10-17,Chocolate Chip,100
+2022-10-17,Oatmeal Raisin,73
+2022-10-17,Sugar,71
+2022-10-17,Peanut Butter,88
+2022-10-17,Snickerdoodle,39
+2022-10-18,Chocolate Chip,59
+2022-10-18,Oatmeal Raisin,46
+2022-10-18,Sugar,39
+2022-10-18,Peanut Butter,70
+2022-10-18,Snickerdoodle,28
+2022-10-19,Chocolate Chip,75
+2022-10-19,Oatmeal Raisin,50
+2022-10-19,Sugar,31
+2022-10-19,Peanut Butter,34
+2022-10-19,Snickerdoodle,97
+2022-10-20,Chocolate Chip,42
+2022-10-20,Oatmeal Raisin,37
+2022-10-20,Sugar,40
+2022-10-20,Peanut Butter,64
+2022-10-20,Snickerdoodle,53
+2022-10-21,Chocolate Chip,36
+2022-10-21,Oatmeal Raisin,54
+2022-10-21,Sugar,35
+2022-10-21,Peanut Butter,23
+2022-10-21,Snickerdoodle,74
+2022-10-22,Chocolate Chip,28
+2022-10-22,Oatmeal Raisin,93
+2022-10-22,Sugar,83
+2022-10-22,Peanut Butter,66
+2022-10-22,Snickerdoodle,92
+2022-10-23,Chocolate Chip,40
+2022-10-23,Oatmeal Raisin,33
+2022-10-23,Sugar,34
+2022-10-23,Peanut Butter,42
+2022-10-23,Snickerdoodle,76
+2022-10-24,Chocolate Chip,69
+2022-10-24,Oatmeal Raisin,42
+2022-10-24,Sugar,24
+2022-10-24,Peanut Butter,73
+2022-10-24,Snickerdoodle,51
+2022-10-25,Chocolate Chip,60
+2022-10-25,Oatmeal Raisin,29
+2022-10-25,Sugar,35
+2022-10-25,Peanut Butter,26
+2022-10-25,Snickerdoodle,86
+2022-10-26,Chocolate Chip,71
+2022-10-26,Oatmeal Raisin,79
+2022-10-26,Sugar,59
+2022-10-26,Peanut Butter,90
+2022-10-26,Snickerdoodle,67
+2022-10-27,Chocolate Chip,92
+2022-10-27,Oatmeal Raisin,99
+2022-10-27,Sugar,67
+2022-10-27,Peanut Butter,83
+2022-10-27,Snickerdoodle,45
+2022-10-28,Chocolate Chip,89
+2022-10-28,Oatmeal Raisin,51
+2022-10-28,Sugar,144
+2022-10-28,Peanut Butter,64
+2022-10-28,Snickerdoodle,21
+2022-10-29,Chocolate Chip,20
+2022-10-29,Oatmeal Raisin,68
+2022-10-29,Sugar,59
+2022-10-29,Peanut Butter,87
+2022-10-29,Snickerdoodle,73
+2022-10-30,Chocolate Chip,27
+2022-10-30,Oatmeal Raisin,38
+2022-10-30,Sugar,15
+2022-10-30,Peanut Butter,86
+2022-10-30,Snickerdoodle,67
+2022-10-31,Chocolate Chip,30
+2022-10-31,Oatmeal Raisin,84
+2022-10-31,Sugar,70
+2022-10-31,Peanut Butter,92
+2022-10-31,Snickerdoodle,36
+2022-11-01,Chocolate Chip,53
+2022-11-01,Oatmeal Raisin,70
+2022-11-01,Sugar,61
+2022-11-01,Peanut Butter,54
+2022-11-01,Snickerdoodle,45
+2022-11-02,Chocolate Chip,94
+2022-11-02,Oatmeal Raisin,33
+2022-11-02,Sugar,79
+2022-11-02,Peanut Butter,35
+2022-11-02,Snickerdoodle,46
+2022-11-03,Chocolate Chip,79
+2022-11-03,Oatmeal Raisin,35
+2022-11-03,Sugar,58
+2022-11-03,Peanut Butter,145
+2022-11-03,Snickerdoodle,38
+2022-11-04,Chocolate Chip,51
+2022-11-04,Oatmeal Raisin,70
+2022-11-04,Sugar,58
+2022-11-04,Peanut Butter,63
+2022-11-04,Snickerdoodle,77
+2022-11-05,Chocolate Chip,90
+2022-11-05,Oatmeal Raisin,79
+2022-11-05,Sugar,37
+2022-11-05,Peanut Butter,27
+2022-11-05,Snickerdoodle,48
+2022-11-06,Chocolate Chip,71
+2022-11-06,Oatmeal Raisin,100
+2022-11-06,Sugar,30
+2022-11-06,Peanut Butter,53
+2022-11-06,Snickerdoodle,14
+2022-11-07,Chocolate Chip,45
+2022-11-07,Oatmeal Raisin,76
+2022-11-07,Sugar,31
+2022-11-07,Peanut Butter,62
+2022-11-07,Snickerdoodle,79
+2022-11-08,Chocolate Chip,93
+2022-11-08,Oatmeal Raisin,70
+2022-11-08,Sugar,68
+2022-11-08,Peanut Butter,42
+2022-11-08,Snickerdoodle,43
+2022-11-09,Chocolate Chip,77
+2022-11-09,Oatmeal Raisin,24
+2022-11-09,Sugar,98
+2022-11-09,Peanut Butter,57
+2022-11-09,Snickerdoodle,90
+2022-11-10,Chocolate Chip,31
+2022-11-10,Oatmeal Raisin,37
+2022-11-10,Sugar,87
+2022-11-10,Peanut Butter,89
+2022-11-10,Snickerdoodle,68
+2022-11-11,Chocolate Chip,65
+2022-11-11,Oatmeal Raisin,82
+2022-11-11,Sugar,92
+2022-11-11,Peanut Butter,69
+2022-11-11,Snickerdoodle,23
+2022-11-12,Chocolate Chip,72
+2022-11-12,Oatmeal Raisin,27
+2022-11-12,Sugar,80
+2022-11-12,Peanut Butter,94
+2022-11-12,Snickerdoodle,40
+2022-11-13,Chocolate Chip,50
+2022-11-13,Oatmeal Raisin,27
+2022-11-13,Sugar,48
+2022-11-13,Peanut Butter,69
+2022-11-13,Snickerdoodle,42
+2022-11-14,Chocolate Chip,95
+2022-11-14,Oatmeal Raisin,65
+2022-11-14,Sugar,23
+2022-11-14,Peanut Butter,65
+2022-11-14,Snickerdoodle,92
+2022-11-15,Chocolate Chip,44
+2022-11-15,Oatmeal Raisin,83
+2022-11-15,Sugar,42
+2022-11-15,Peanut Butter,31
+2022-11-15,Snickerdoodle,97
+2022-11-16,Chocolate Chip,87
+2022-11-16,Oatmeal Raisin,62
+2022-11-16,Sugar,45
+2022-11-16,Peanut Butter,63
+2022-11-16,Snickerdoodle,61
+2022-11-17,Chocolate Chip,38
+2022-11-17,Oatmeal Raisin,38
+2022-11-17,Sugar,87
+2022-11-17,Peanut Butter,29
+2022-11-17,Snickerdoodle,70
+2022-11-18,Chocolate Chip,63
+2022-11-18,Oatmeal Raisin,37
+2022-11-18,Sugar,75
+2022-11-18,Peanut Butter,82
+2022-11-18,Snickerdoodle,42
+2022-11-19,Chocolate Chip,91
+2022-11-19,Oatmeal Raisin,98
+2022-11-19,Sugar,48
+2022-11-19,Peanut Butter,42
+2022-11-19,Snickerdoodle,57
+2022-11-20,Chocolate Chip,20
+2022-11-20,Oatmeal Raisin,93
+2022-11-20,Sugar,184
+2022-11-20,Peanut Butter,60
+2022-11-20,Snickerdoodle,98
+2022-11-21,Chocolate Chip,92
+2022-11-21,Oatmeal Raisin,83
+2022-11-21,Sugar,29
+2022-11-21,Peanut Butter,60
+2022-11-21,Snickerdoodle,31
+2022-11-22,Chocolate Chip,62
+2022-11-22,Oatmeal Raisin,53
+2022-11-22,Sugar,28
+2022-11-22,Peanut Butter,33
+2022-11-22,Snickerdoodle,26
+2022-11-23,Chocolate Chip,73
+2022-11-23,Oatmeal Raisin,72
+2022-11-23,Sugar,68
+2022-11-23,Peanut Butter,68
+2022-11-23,Snickerdoodle,81
+2022-11-24,Chocolate Chip,93
+2022-11-24,Oatmeal Raisin,48
+2022-11-24,Sugar,29
+2022-11-24,Peanut Butter,24
+2022-11-24,Snickerdoodle,60
+2022-11-25,Chocolate Chip,33
+2022-11-25,Oatmeal Raisin,41
+2022-11-25,Sugar,40
+2022-11-25,Peanut Butter,90
+2022-11-25,Snickerdoodle,31
+2022-11-26,Chocolate Chip,98
+2022-11-26,Oatmeal Raisin,23
+2022-11-26,Sugar,41
+2022-11-26,Peanut Butter,75
+2022-11-26,Snickerdoodle,32
+2022-11-27,Chocolate Chip,44
+2022-11-27,Oatmeal Raisin,90
+2022-11-27,Sugar,89
+2022-11-27,Peanut Butter,56
+2022-11-27,Snickerdoodle,64
+2022-11-28,Chocolate Chip,90
+2022-11-28,Oatmeal Raisin,39
+2022-11-28,Sugar,20
+2022-11-28,Peanut Butter,57
+2022-11-28,Snickerdoodle,100
+2022-11-29,Chocolate Chip,45
+2022-11-29,Oatmeal Raisin,46
+2022-11-29,Sugar,57
+2022-11-29,Peanut Butter,80
+2022-11-29,Snickerdoodle,59
+2022-11-30,Chocolate Chip,80
+2022-11-30,Oatmeal Raisin,53
+2022-11-30,Sugar,89
+2022-11-30,Peanut Butter,67
+2022-11-30,Snickerdoodle,67
+2022-12-01,Chocolate Chip,25
+2022-12-01,Oatmeal Raisin,79
+2022-12-01,Sugar,54
+2022-12-01,Peanut Butter,39
+2022-12-01,Snickerdoodle,32
+2022-12-02,Chocolate Chip,64
+2022-12-02,Oatmeal Raisin,72
+2022-12-02,Sugar,95
+2022-12-02,Peanut Butter,27
+2022-12-02,Snickerdoodle,86
+2022-12-03,Chocolate Chip,88
+2022-12-03,Oatmeal Raisin,80
+2022-12-03,Sugar,50
+2022-12-03,Peanut Butter,30
+2022-12-03,Snickerdoodle,24
+2022-12-04,Chocolate Chip,86
+2022-12-04,Oatmeal Raisin,99
+2022-12-04,Sugar,77
+2022-12-04,Peanut Butter,41
+2022-12-04,Snickerdoodle,44
+2022-12-05,Chocolate Chip,74
+2022-12-05,Oatmeal Raisin,75
+2022-12-05,Sugar,100
+2022-12-05,Peanut Butter,96
+2022-12-05,Snickerdoodle,28
+2022-12-06,Chocolate Chip,91
+2022-12-06,Oatmeal Raisin,61
+2022-12-06,Sugar,86
+2022-12-06,Peanut Butter,21
+2022-12-06,Snickerdoodle,99
+2022-12-07,Chocolate Chip,73
+2022-12-07,Oatmeal Raisin,39
+2022-12-07,Sugar,95
+2022-12-07,Peanut Butter,32
+2022-12-07,Snickerdoodle,92
+2022-12-08,Chocolate Chip,56
+2022-12-08,Oatmeal Raisin,64
+2022-12-08,Sugar,53
+2022-12-08,Peanut Butter,82
+2022-12-08,Snickerdoodle,120
+2022-12-09,Chocolate Chip,71
+2022-12-09,Oatmeal Raisin,97
+2022-12-09,Sugar,106
+2022-12-09,Peanut Butter,75
+2022-12-09,Snickerdoodle,54
+2022-12-10,Chocolate Chip,22
+2022-12-10,Oatmeal Raisin,58
+2022-12-10,Sugar,82
+2022-12-10,Peanut Butter,32
+2022-12-10,Snickerdoodle,49
+2022-12-11,Chocolate Chip,76
+2022-12-11,Oatmeal Raisin,61
+2022-12-11,Sugar,73
+2022-12-11,Peanut Butter,31
+2022-12-11,Snickerdoodle,47
+2022-12-12,Chocolate Chip,72
+2022-12-12,Oatmeal Raisin,86
+2022-12-12,Sugar,27
+2022-12-12,Peanut Butter,40
+2022-12-12,Snickerdoodle,84
+2022-12-13,Chocolate Chip,87
+2022-12-13,Oatmeal Raisin,23
+2022-12-13,Sugar,45
+2022-12-13,Peanut Butter,25
+2022-12-13,Snickerdoodle,66
+2022-12-14,Chocolate Chip,55
+2022-12-14,Oatmeal Raisin,79
+2022-12-14,Sugar,35
+2022-12-14,Peanut Butter,50
+2022-12-14,Snickerdoodle,96
+2022-12-15,Chocolate Chip,80
+2022-12-15,Oatmeal Raisin,64
+2022-12-15,Sugar,53
+2022-12-15,Peanut Butter,31
+2022-12-15,Snickerdoodle,138
+2022-12-16,Chocolate Chip,47
+2022-12-16,Oatmeal Raisin,48
+2022-12-16,Sugar,54
+2022-12-16,Peanut Butter,170
+2022-12-16,Snickerdoodle,21
+2022-12-17,Chocolate Chip,36
+2022-12-17,Oatmeal Raisin,96
+2022-12-17,Sugar,48
+2022-12-17,Peanut Butter,59
+2022-12-17,Snickerdoodle,55
+2022-12-18,Chocolate Chip,68
+2022-12-18,Oatmeal Raisin,78
+2022-12-18,Sugar,79
+2022-12-18,Peanut Butter,86
+2022-12-18,Snickerdoodle,70
+2022-12-19,Chocolate Chip,20
+2022-12-19,Oatmeal Raisin,67
+2022-12-19,Sugar,96
+2022-12-19,Peanut Butter,58
+2022-12-19,Snickerdoodle,81
+2022-12-20,Chocolate Chip,55
+2022-12-20,Oatmeal Raisin,55
+2022-12-20,Sugar,58
+2022-12-20,Peanut Butter,86
+2022-12-20,Snickerdoodle,27
+2022-12-21,Chocolate Chip,96
+2022-12-21,Oatmeal Raisin,60
+2022-12-21,Sugar,23
+2022-12-21,Peanut Butter,57
+2022-12-21,Snickerdoodle,73
+2022-12-22,Chocolate Chip,24
+2022-12-22,Oatmeal Raisin,93
+2022-12-22,Sugar,63
+2022-12-22,Peanut Butter,48
+2022-12-22,Snickerdoodle,80
+2022-12-23,Chocolate Chip,65
+2022-12-23,Oatmeal Raisin,41
+2022-12-23,Sugar,91
+2022-12-23,Peanut Butter,32
+2022-12-23,Snickerdoodle,53
+2022-12-24,Chocolate Chip,91
+2022-12-24,Oatmeal Raisin,43
+2022-12-24,Sugar,62
+2022-12-24,Peanut Butter,48
+2022-12-24,Snickerdoodle,59
+2022-12-25,Chocolate Chip,62
+2022-12-25,Oatmeal Raisin,94
+2022-12-25,Sugar,35
+2022-12-25,Peanut Butter,94
+2022-12-25,Snickerdoodle,99
+2022-12-26,Chocolate Chip,44
+2022-12-26,Oatmeal Raisin,68
+2022-12-26,Sugar,72
+2022-12-26,Peanut Butter,39
+2022-12-26,Snickerdoodle,45
+2022-12-27,Chocolate Chip,92
+2022-12-27,Oatmeal Raisin,78
+2022-12-27,Sugar,43
+2022-12-27,Peanut Butter,82
+2022-12-27,Snickerdoodle,42
+2022-12-28,Chocolate Chip,40
+2022-12-28,Oatmeal Raisin,46
+2022-12-28,Sugar,41
+2022-12-28,Peanut Butter,40
+2022-12-28,Snickerdoodle,31
+2022-12-29,Chocolate Chip,75
+2022-12-29,Oatmeal Raisin,71
+2022-12-29,Sugar,81
+2022-12-29,Peanut Butter,24
+2022-12-29,Snickerdoodle,67
+2022-12-30,Chocolate Chip,61
+2022-12-30,Oatmeal Raisin,87
+2022-12-30,Sugar,20
+2022-12-30,Peanut Butter,51
+2022-12-30,Snickerdoodle,64
+2022-12-31,Chocolate Chip,33
+2022-12-31,Oatmeal Raisin,95
+2022-12-31,Sugar,28
+2022-12-31,Peanut Butter,58
+2022-12-31,Snickerdoodle,78
