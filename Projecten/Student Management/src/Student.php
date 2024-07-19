@@ -8,11 +8,11 @@ class Student extends Person
     /**
      * Construct a new student object
      * @param string $name Full name
-     * @param string $dob Date of birth
+     * @param DateTime $dob Date of birth
      * @param string $mail Email
      * @param string $phone Phone number
      */
-    public function __construct(string $name, string $dob, string $mail, string $phone)
+    public function __construct(string $name, DateTime $dob, string $mail, string $phone)
     {
         parent::__construct($name, $dob, $mail, $phone);
     }

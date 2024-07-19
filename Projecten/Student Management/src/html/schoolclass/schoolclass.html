@@ -40,19 +40,20 @@
     <tr>
         <td>Stuur email naar mentor</td>
         <td colspan=3>
-            <form method="post" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>''>
-                <input type="text"  style="width: 80%; margin: 0 auto;"  name="mailtext">
-                <input type="hidden" name="mentorid" value="<?= array_search($school->getMentor(), $arrs->getMentors()) ?>">
+            <form method="post" action='/?page=mail'>
+                <input type="text" style="width: 80%; margin: 0 auto;" name="mailtext">
+                <input type="hidden" name="mentorid"
+                    value="<?= array_search($school->getMentor(), $arrs->getMentors()) ?>">
                 <input type="submit" style="float: right;" value="versturen">
             </form>
         </td>
     </tr>
     <tr>
-                <td colspan="10">
-                    <center>
-                        <h2>Studenten</h2>
-                    </center>
-                </td>
+        <td colspan="10">
+            <center>
+                <h2>Studenten</h2>
+            </center>
+        </td>
     </tr>
     <tr>
         <td><b>Naam</b></td>
@@ -62,9 +63,10 @@
     </tr>
     <?php foreach($school->getStudents() as $studentId => $student) { ?>
     <tr>
-        <?php ShowStudent($student); ?>
-<td>
-                <form method="post" action=' <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>''>
+        <?php showStudent($student); ?>
+        <td>
+            <form method="post" action='/?page=class&action=del&classid=<?=array_search($school, $arrs->
+                getSchools()) ?>'>
                 <input type="hidden" name="studentid" value="<?= $studentId ?>">
                 <input type="hidden" name="schoolclassid" value="<?= array_search($school, $arrs->getSchools()) ?>">
                 <input type="submit" value="Verwijder">
@@ -73,8 +75,13 @@
     </tr>
     <?php } ?>
     <tr>
-        <td></td>
-    </tr>
+        <td colspan="4">Student Toevoegen: <form method="post"
+                action="/?page=class&action=add&classid=<?=array_search($school, $arrs-> getSchools()) ?>">
+                <?php getStudentDropdown(); ?>
+                <input type="hidden" name="schoolclassid" value="<?= array_search($school, $arrs->getSchools()) ?>">
+                <input type="submit" value="Toevoegen">
+            </form>
+        </td>
     </tr>
 </table>
 <br>

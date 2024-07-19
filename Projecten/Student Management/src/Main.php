@@ -12,7 +12,7 @@ function loadAll()
     if (isset($_SESSION["arrs"])) {
         $arrs = $_SESSION["arrs"];
     } else {
-        $_SESSION["arrs"] = new School("OSG Piter Jelles");
+        $_SESSION["arrs"] = $arrs;
     }
 }
 
@@ -68,6 +68,12 @@ function showMentor(Mentor $mentor): void
     include 'html/mentor.html';
 }
 
+function getStudentDropdown(): void
+{
+    global $arrs;
+    include 'html/student/dropdown.html';
+}
+
 /**
  * Display single student in HTML Table Columns
  * @param Student $student
@@ -87,9 +93,11 @@ function showSpecials(): array
 {
     global $arrs;
     $studentsMatched = [];
-    foreach ($arrs->getStudents() as $student) {
-        if (str_contains($student->getDob(), '2004')) {
-            array_push($studentsMatched, $student);
+    $students = $arrs->getStudents();
+
+    foreach ($students as $match) {
+        if ($match->getDob()->format('Y') == '2004') {
+            array_push($studentsMatched, $match);
         }
     }
     return $studentsMatched;

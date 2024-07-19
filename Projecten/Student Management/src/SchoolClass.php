@@ -56,7 +56,10 @@ class SchoolClass
             }
         }
     }
-
+    public function delStudentId(int $id): void
+    {
+        unset($this->students[$id]);
+    }
     public function delStudent(Student $student): void
     {
         if (in_array($student, $this->students)) {

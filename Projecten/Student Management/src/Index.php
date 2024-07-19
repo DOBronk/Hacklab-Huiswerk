@@ -2,28 +2,8 @@
 require_once "Main.php";
 require_once "Mailer.php";
 require_once "controllers/studentcontroller.php";
-
+require_once "controllers/classcontroller.php";
 loadAll();
-
-if (isset($_GET['action']) && $_GET['action'] == 'abort') {
-    session_unset();
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["mentorid"])) {
-        $mentorId = test_input($_POST["mentorid"]);
-        $text = test_input($_POST["mailtext"]);
-        $mailer = new Mailer();
-        echo "<h3 style='background-color:Tomato;'>";
-        $mailer->send($text, $arrs->getMentor($mentorId));
-        echo "</h3>";
-    } elseif (isset($_POST["studentid"])) {
-        $studentId = test_input($_POST["studentid"]);
-        $schoolClassId = test_input($_POST["schoolclassid"]);
-        $arrs->getSchool($schoolClassId)->delStudent($arrs->getStudent($studentId));
-        echo "<h3 style='background-color:Tomato;'>" . count($arrs->getStudents()) . " studenten in main array nog over (mag niet lager zijn) </h3>";
-    }
-}
 function test_input($data): mixed
 {
     $data = trim($data);
@@ -43,6 +23,24 @@ if (isset($_GET['action']) && test_input($_GET['action']) == 'reset') {
 }
 
 switch ($page) {
+    case "mail":
+        $mentorId = test_input($_POST["mentorid"]);
+        $text = test_input($_POST["mailtext"]);
+        $mailer = new Mailer();
+        echo "<h3 style='background-color:Tomato;'>";
+        $mailer->send($text, $arrs->getMentor($mentorId));
+        echo "</h3>";
+        break;
+    case 'class':
+        switch (@$_GET["action"]) {
+            case 'del':
+                Classcontroller::deleteStudent((int) $_POST["studentid"], (int) $_POST["schoolclassid"]);
+                break;
+            case 'add':
+                Classcontroller::addStudent((int) $_POST["studentid"], (int) $_POST["schoolclassid"]);
+                break;
+        }
+        break;
     case 'home':
         include_once "html\home.html";
         break;

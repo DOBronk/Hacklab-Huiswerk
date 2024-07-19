@@ -1,0 +1,7 @@
+<select name="studentid">
+    <?php foreach($arrs->getStudents() as $id => $student) { ?>
+    <option value="<?= $id ?>">
+        <?= $student->getName() ?>
+    </option>
+    <?php } ?>
+</select>

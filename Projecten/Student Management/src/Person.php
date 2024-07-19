@@ -4,12 +4,12 @@ class Person
 {
     /**
      * Construct a new person object
-     * @param string $name Full name
-     * @param string $dob Date of birth
-     * @param string $mail Email
-     * @param string $phone Phone number
+     * @param string $name
+     * @param DateTime $dob
+     * @param string $mail
+     * @param string $phone
      */
-    public function __construct(private string $name, private string $dob, private string $mail, private string $phone)
+    public function __construct(private string $name, private DateTime $dob, private string $mail, private string $phone)
     {
     }
 
@@ -18,11 +18,15 @@ class Person
         return $this->name;
     }
 
-    public function getDob(): string
+    public function getDob(): DateTime
     {
         return $this->dob;
     }
 
+    public function getDobString(): string
+    {
+        return $this->dob->format('d-m-Y');
+    }
     public function getMail(): string
     {
         return $this->mail;
@@ -38,7 +42,7 @@ class Person
         $this->name = $name;
     }
 
-    public function setDob(string $dob): void
+    public function setDob(DateTime $dob): void
     {
         $this->dob = $dob;
     }
