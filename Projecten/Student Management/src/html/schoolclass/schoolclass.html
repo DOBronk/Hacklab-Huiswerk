@@ -3,7 +3,7 @@
         <td colspan="10">
             <center>
                 <h2>Schoolklas
-                    <?= $school->getName() ?>
+                    <?= $schoolclass->getName() ?>
                 </h2>
             </center>
         </td>
@@ -14,10 +14,10 @@
     </tr>
     <tr>
         <td>
-            <?= $school->getYear() ?>
+            <?= $schoolclass->getYear() ?>
         </td>
         <td>
-            <?= count($school->getStudents()) ?>
+            <?= count($schoolclass->getStudents()) ?>
         </td>
     </tr>
 
@@ -35,15 +35,14 @@
         <td><b>Telefoonnr</b></td>
     </tr>
     <tr>
-        <?= ShowMentor($school->getMentor()) ?>
+        <?= ShowMentor($schoolclass->getMentor()) ?>
     </tr>
     <tr>
         <td>Stuur email naar mentor</td>
         <td colspan=3>
             <form method="post" action='/?page=mail'>
                 <input type="text" style="width: 80%; margin: 0 auto;" name="mailtext">
-                <input type="hidden" name="mentorid"
-                    value="<?= array_search($school->getMentor(), $arrs->getMentors()) ?>">
+                <input type="hidden" name="mentorid" value="<?= $mentorId ?>">
                 <input type="submit" style="float: right;" value="versturen">
             </form>
         </td>
@@ -61,24 +60,22 @@
         <td><b>E-mail</b></td>
         <td><b>Telefoonnr</b></td>
     </tr>
-    <?php foreach($school->getStudents() as $studentId => $student) { ?>
+    <?php foreach($schoolclass->getStudents() as $studentId => $student) { ?>
     <tr>
         <?php showStudent($student); ?>
         <td>
-            <form method="post" action='/?page=class&action=del&classid=<?=array_search($school, $arrs->
-                getSchools()) ?>'>
+            <form method="post" action='/?page=class&action=del&classid=<?= $classId ?>'>
                 <input type="hidden" name="studentid" value="<?= $studentId ?>">
-                <input type="hidden" name="schoolclassid" value="<?= array_search($school, $arrs->getSchools()) ?>">
+                <input type="hidden" name="schoolclassid" value="<?= $classId ?>">
                 <input type="submit" value="Verwijder">
             </form>
         </td>
     </tr>
     <?php } ?>
     <tr>
-        <td colspan="4">Student Toevoegen: <form method="post"
-                action="/?page=class&action=add&classid=<?=array_search($school, $arrs-> getSchools()) ?>">
+        <td colspan="4">Student Toevoegen: <form method="post" action="/?page=class&action=add&classid=<?= $classId ?>">
                 <?php getStudentDropdown(); ?>
-                <input type="hidden" name="schoolclassid" value="<?= array_search($school, $arrs->getSchools()) ?>">
+                <input type="hidden" name="schoolclassid" value="<?= $classId ?>">
                 <input type="submit" value="Toevoegen">
             </form>
         </td>

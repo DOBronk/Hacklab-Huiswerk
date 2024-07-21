@@ -1,20 +1,41 @@
-<ul>
-    <?php foreach($arrs->getStudents() as $id => $student) { ?>
-    <li>
-        <p>
-            <?= $student->getName() ?>
-        </p>
-        <p>
-            <?= $student->getDob()->format('d-m-Y') ?>
-        </p>
-        <p>
-            <?= $student->getMail() ?>
-        </p>
-        <p>
-            <?= $student->getPhone() ?>
-        </p>
-        <p><a href="/?page=student&action=modify&studentid=<?= $id ?>">Wijzigen</a></p>
-    </li>
-    <?php } ?>
+<html>
 
-</ul>
+<head>
+    <link rel="stylesheet" href="/html/css/styles.css">
+</head>
+
+<body>
+
+    <div class="table">
+        <div class="row">
+            <div class="cell">Naam</div>
+            <div class="cell">Geboortedatum</div>
+            <div class="cell">E-Mail</div>
+            <div class="cell">Telefoon</div>
+        </div>
+        <?php foreach($school->getStudents() as $id => $student) { ?>
+        <div class="row">
+            <div class="cell">
+                <?= $student->getName() ?>
+            </div>
+            <div class="cell">
+                <?= $student->getDob()->format('d-m-Y') ?>
+            </div>
+            <div class="cell">
+                <?= $student->getMail() ?>
+            </div>
+            <div class="cell">
+                <?= $student->getPhone() ?>
+            </div>
+            <div class="cell">
+                <p><a href="/?page=student&action=modify&studentid=<?= $id ?>">Wijzigen</a></p>
+            </div>
+        </div>
+        <?php } ?>
+
+
+
+    </div>
+</body>
+
+</html>

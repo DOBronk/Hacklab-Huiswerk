@@ -1,0 +1,187 @@
+[
+    [
+        {
+            "name": "Birch House",
+            "type": "house",
+            "details": {
+                "color": "black"
+            }
+        },
+        {
+            "name": "Oak House",
+            "type": "house",
+            "details": {
+                "color": "blue"
+            }
+        },
+        {
+            "name": "Oak House",
+            "type": "house",
+            "details": {
+                "color": "black"
+            }
+        },
+        {
+            "name": "Birch House",
+            "type": "house",
+            "details": {
+                "color": "red"
+            }
+        },
+        {
+            "name": "Birch Street",
+            "type": "street",
+            "details": {
+                "length": "5km"
+            }
+        }
+    ],
+    [
+        {
+            "name": "Pine House",
+            "type": "house",
+            "details": {
+                "color": "white"
+            }
+        },
+        {
+            "name": "Oak Street",
+            "type": "street",
+            "details": {
+                "length": "2km"
+            }
+        },
+        {
+            "name": "Pine Street",
+            "type": "street",
+            "details": {
+                "length": "2km"
+            }
+        },
+        {
+            "name": "Maple House",
+            "type": "house",
+            "details": {
+                "color": "black"
+            }
+        },
+        {
+            "name": "Pine Landmark",
+            "type": "landmark",
+            "details": {
+                "size": "large"
+            }
+        }
+    ],
+    [
+        {
+            "name": "Maple Street",
+            "type": "street",
+            "details": {
+                "length": "1km"
+            }
+        },
+        {
+            "name": "Birch Landmark",
+            "type": "landmark",
+            "details": {
+                "size": "large"
+            }
+        },
+        {
+            "name": "Birch Street",
+            "type": "street",
+            "details": {
+                "length": "5km"
+            }
+        },
+        {
+            "name": "Birch House",
+            "type": "house",
+            "details": {
+                "color": "red"
+            }
+        },
+        {
+            "name": "Elm Street",
+            "type": "street",
+            "details": {
+                "length": "3km"
+            }
+        }
+    ],
+    [
+        {
+            "name": "Pine Landmark",
+            "type": "landmark",
+            "details": {
+                "size": "small"
+            }
+        },
+        {
+            "name": "Elm House",
+            "type": "house",
+            "details": {
+                "color": "green"
+            }
+        },
+        {
+            "name": "Oak Street",
+            "type": "street",
+            "details": {
+                "length": "2km"
+            }
+        },
+        {
+            "name": "Birch House",
+            "type": "house",
+            "details": {
+                "color": "green"
+            }
+        },
+        {
+            "name": "Elm House",
+            "type": "house",
+            "details": {
+                "color": "white"
+            }
+        }
+    ],
+    [
+        {
+            "name": "Maple Street",
+            "type": "street",
+            "details": {
+                "length": "5km"
+            }
+        },
+        {
+            "name": "Oak Street",
+            "type": "street",
+            "details": {
+                "length": "1km"
+            }
+        },
+        {
+            "name": "Maple Landmark",
+            "type": "landmark",
+            "details": {
+                "size": "small"
+            }
+        },
+        {
+            "name": "Maple Landmark",
+            "type": "landmark",
+            "details": {
+                "size": "large"
+            }
+        },
+        {
+            "name": "Maple Landmark",
+            "type": "landmark",
+            "details": {
+                "size": "large"
+            }
+        }
+    ]
+]

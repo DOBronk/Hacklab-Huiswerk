@@ -3,28 +3,17 @@ require_once "School.php";
 require_once "Mailer.php";
 
 session_start();
-$arrs = new School("OSG Piter Jelles");
+$school = new School("OSG Piter Jelles");
 
 function loadAll()
 {
-    global $arrs;
+    global $school;
 
-    if (isset($_SESSION["arrs"])) {
-        $arrs = $_SESSION["arrs"];
+    if (isset($_SESSION["school"])) {
+        $school = $_SESSION["school"];
     } else {
-        $_SESSION["arrs"] = $arrs;
+        $_SESSION["school"] = $school;
     }
-}
-
-/**
- * Send an email message to a mentor
- * @param Mentor $mentor The mentor to be addressed
- * @return void
- */
-function testMailer(Mentor $mentor): void
-{
-    $mailer = new Mailer();
-    $mailer->send("Testbericht", $mentor);
 }
 
 /**
@@ -33,10 +22,10 @@ function testMailer(Mentor $mentor): void
  */
 function showAllClasses(): void
 {
-    global $arrs;
+    global $school;
 
-    foreach ($arrs->getSchools() as $school) {
-        showclass($school);
+    foreach ($school->getSchools() as $schoolClass) {
+        showclass($schoolClass);
     }
 }
 
@@ -45,15 +34,17 @@ function showAllClasses(): void
  * @param SchoolClass $schoolClass The schoolclass to be shown
  * @return void
  */
-function showClass(SchoolClass $school): void
+function showClass(SchoolClass $schoolclass): void
 {
-    global $arrs;
+    global $school;
+    $mentorId = array_search($schoolclass->getMentor(), $school->getMentors());
+    $classId = array_search($schoolclass, $school->getSchools());
     include 'html/schoolclass/schoolclass.html';
 }
 
 function showAllStudents(): void
 {
-    global $arrs;
+    global $school;
     include_once 'html/student/list.html';
 }
 
@@ -64,13 +55,13 @@ function showAllStudents(): void
  */
 function showMentor(Mentor $mentor): void
 {
-    global $arrs;
+    global $school;
     include 'html/mentor.html';
 }
 
 function getStudentDropdown(): void
 {
-    global $arrs;
+    global $school;
     include 'html/student/dropdown.html';
 }
 
@@ -81,7 +72,7 @@ function getStudentDropdown(): void
  */
 function showStudent(Student $student): void
 {
-    global $arrs;
+    global $school;
     include 'html/student.html';
 }
 
@@ -91,9 +82,9 @@ function showStudent(Student $student): void
  */
 function showSpecials(): array
 {
-    global $arrs;
+    global $school;
     $studentsMatched = [];
-    $students = $arrs->getStudents();
+    $students = $school->getStudents();
 
     foreach ($students as $match) {
         if ($match->getDob()->format('Y') == '2004') {

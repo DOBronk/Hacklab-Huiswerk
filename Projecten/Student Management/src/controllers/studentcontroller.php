@@ -5,14 +5,14 @@ class Studentcontroller
 {
     public static function Create($name, string $dob, $mail, $phone): void
     {
-        global $arrs;
-        $arrs->addStudent(new Student($name, DateTime::createFromFormat('Y-m-d', $dob), $mail, $phone));
+        global $school;
+        $school->addStudent(new Student($name, DateTime::createFromFormat('Y-m-d', $dob), $mail, $phone));
         header("location: /");
     }
     public static function Modify($id, $name, $dob, $mail, $phone): void
     {
-        global $arrs;
-        $student = $arrs->getStudent($id);
+        global $school;
+        $student = $school->getStudent($id);
         $student->setName($name);
         $student->setDob(DateTime::createFromFormat('Y-m-d', $dob));
         $student->setMail($mail);
@@ -27,9 +27,9 @@ class Studentcontroller
 
     public static function ShowModify(): void
     {
-        global $arrs;
+        global $school;
         $studentId = $_GET['studentid'];
-        $student = $arrs->getStudent((int) $studentId);
+        $student = $school->getStudent((int) $studentId);
 
         include_once '.\html\student\modify.html';
     }

@@ -28,7 +28,7 @@ switch ($page) {
         $text = test_input($_POST["mailtext"]);
         $mailer = new Mailer();
         echo "<h3 style='background-color:Tomato;'>";
-        $mailer->send($text, $arrs->getMentor($mentorId));
+        $mailer->send($text, $school->getMentor($mentorId));
         echo "</h3>";
         break;
     case 'class':
@@ -42,6 +42,7 @@ switch ($page) {
         }
         break;
     case 'home':
+        global $school;
         include_once "html\home.html";
         break;
     case "student":

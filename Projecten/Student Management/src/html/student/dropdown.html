@@ -1,5 +1,5 @@
 <select name="studentid">
-    <?php foreach($arrs->getStudents() as $id => $student) { ?>
+    <?php foreach($school->getStudents() as $id => $student) { ?>
     <option value="<?= $id ?>">
         <?= $student->getName() ?>
     </option>
