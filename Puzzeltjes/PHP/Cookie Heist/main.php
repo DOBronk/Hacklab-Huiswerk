@@ -87,4 +87,6 @@ foreach ($final as $product => $missing) {
 
 echo "\nMost common missing product: $missingProduct with a total difference of $highest";
 
+// The product mostly missing doesn't seem that important here though, the thief seems to dislike a particular product.
+
 
