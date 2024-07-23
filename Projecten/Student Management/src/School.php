@@ -7,6 +7,7 @@ class School
     private array $mentors = [];
     private array $students = [];
     private array $schoolClasses = [];
+
     private string $name;
 
     public function __construct()
