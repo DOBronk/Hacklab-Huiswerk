@@ -6,8 +6,14 @@ class Studentcontroller
     public static function Create($name, string $dob, $mail, $phone): void
     {
         global $school;
+
+
         $school->addStudent(new Student($name, DateTime::createFromFormat('Y-m-d', $dob), $mail, $phone));
+
         header("location: /");
+
+
+
     }
     public static function Modify($id, $name, $dob, $mail, $phone): void
     {

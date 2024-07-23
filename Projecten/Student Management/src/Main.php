@@ -1,9 +1,10 @@
 <?PHP
 require_once "School.php";
 require_once "Mailer.php";
+require_once "data/db.php";
 
 session_start();
-$school = new School("OSG Piter Jelles");
+$school = new School();
 
 function loadAll()
 {
@@ -59,7 +60,7 @@ function showMentor(Mentor $mentor): void
     include 'html/mentor.html';
 }
 
-function getStudentDropdown(): void
+function getStudentDropdown(array $exclude = []): void
 {
     global $school;
     include 'html/student/dropdown.html';

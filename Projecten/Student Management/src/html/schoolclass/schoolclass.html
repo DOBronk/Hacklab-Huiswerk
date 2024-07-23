@@ -74,7 +74,7 @@
     <?php } ?>
     <tr>
         <td colspan="4">Student Toevoegen: <form method="post" action="/?page=class&action=add&classid=<?= $classId ?>">
-                <?php getStudentDropdown(); ?>
+                <?php getStudentDropdown($schoolclass->getStudents()); ?>
                 <input type="hidden" name="schoolclassid" value="<?= $classId ?>">
                 <input type="submit" value="Toevoegen">
             </form>

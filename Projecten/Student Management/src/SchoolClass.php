@@ -17,6 +17,13 @@ class SchoolClass
     {
         return $this->mentor;
     }
+
+    public function getMentorId(array $mentors): int|bool
+    {
+        $mentorid = array_search($this->getMentor(), $mentors);
+        return ($mentorid !== false) ? $mentorid : false;
+    }
+
     public function getStudents(): array
     {
         return $this->students;

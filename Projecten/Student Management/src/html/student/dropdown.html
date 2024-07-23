@@ -1,7 +1,8 @@
 <select name="studentid">
-    <?php foreach($school->getStudents() as $id => $student) { ?>
+    <?php foreach($school->getStudents() as $id => $student) {
+        if(array_search($student, $exclude) === false) { ?>
     <option value="<?= $id ?>">
         <?= $student->getName() ?>
     </option>
-    <?php } ?>
+    <?php } } ?>
 </select>
