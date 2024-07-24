@@ -1,35 +1,13 @@
 <?php
 require_once "Main.php";
-require_once "Mailer.php";
 require_once "controllers/studentcontroller.php";
 require_once "controllers/classcontroller.php";
-loadAll();
-function test_input($data): mixed
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
 
 $page = $_GET['page'] ?? 'home';
 
-$page = test_input($page);
-
-if (isset($_GET['action']) && test_input($_GET['action']) == 'reset') {
-    session_unset();
-    session_destroy();
-    header('location: /');
-}
-
 switch ($page) {
     case "mail":
-        $mentorId = test_input($_POST["mentorid"]);
-        $text = test_input($_POST["mailtext"]);
-        $mailer = new Mailer();
-        echo "<h3 style='background-color:Tomato;'>";
-        $mailer->send($text, $school->getMentor($mentorId));
-        echo "</h3>";
+        mailerExample();
         break;
     case 'class':
         switch (@$_GET["action"]) {
@@ -42,8 +20,7 @@ switch ($page) {
         }
         break;
     case 'home':
-        global $school;
-        include_once "html\home.html";
+        homeHandler();
         break;
     case "student":
         switch (@$_GET["action"]) {
@@ -63,7 +40,6 @@ switch ($page) {
             case "create":
                 Studentcontroller::ShowCreate();
                 break;
-
         }
 }
 ?>

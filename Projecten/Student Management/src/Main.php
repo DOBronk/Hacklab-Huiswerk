@@ -5,16 +5,11 @@ require_once "data/db.php";
 
 session_start();
 $school = new School();
-
-function loadAll()
-{
-    global $school;
-
-    if (isset($_SESSION["school"])) {
-        $school = $_SESSION["school"];
-    } else {
-        $_SESSION["school"] = $school;
-    }
+// Load session variables
+if (isset($_SESSION["school"])) {
+    $school = $_SESSION["school"];
+} else {
+    $_SESSION["school"] = $school;
 }
 
 /**
@@ -93,4 +88,35 @@ function showSpecials(): array
         }
     }
     return $studentsMatched;
+}
+
+function mailerExample(): void
+{
+    global $school;
+
+    $mentor = $school->getMentor($_POST["mentorid"]);
+    $text = htmlspecialchars(($_POST["mailtext"]));
+    $mailer = new Mailer();
+    $mailer->send($text, $mentor);
+}
+
+function sessionRestart(): void
+{
+    session_unset();
+    session_destroy();
+    session_start();
+    $_SESSION['msg'] = '<br>Sessie gereset!<br>';
+}
+
+function homeHandler(): void
+{
+    if (@$_GET['action'] == 'reset') {
+        sessionRestart();
+        header('location: /');
+    } else {
+        global $school;
+        $msg = $_SESSION['msg'] ?? '';
+        unset($_SESSION['msg']);
+        include_once "html\home.html";
+    }
 }
