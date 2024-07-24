@@ -58,9 +58,20 @@ class PdoService
     }
 
     /**
+     * Update a record into the database
+     * @param string $sql The SQL Query to execute.
+     * @param array $values The values to bind to the query.
+     * @return bool True on success, false on failure.
+     */
+    public function update(string $sql): int
+    {
+        $stmt = $this->pdo->prepare($sql);
+        return $stmt->execute();
+    }
+
+    /**
      * Fetch a single record from the database.
      * 
-     * @param int $id The ID of the record to fetch.
      * @param string $table The name of the table to fetch from.
      * @return array The fetched record as an associative array.
      */

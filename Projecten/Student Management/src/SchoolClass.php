@@ -8,7 +8,7 @@ class SchoolClass
 {
     private array $students;
 
-    public function __construct(private string $name, private int $year, private Mentor $mentor)
+    public function __construct(private int $class_id, private string $name, private int $year, private Mentor $mentor)
     {
         $this->students = [];
     }
@@ -57,7 +57,9 @@ class SchoolClass
     {
         foreach ($studenten as $student) {
             if (!in_array($student, $this->students)) {
-                array_push($this->students, $student);
+                $student->setClassId($this->class_id);
+                $this->students += [$student->getId() => $student];
+
             } else {
                 throw new \Exception("Deze student zit er al in");
             }
@@ -65,12 +67,14 @@ class SchoolClass
     }
     public function delStudentId(int $id): void
     {
+        $this->students[$id]->setClassId(-1);
         unset($this->students[$id]);
     }
     public function delStudent(Student $student): void
     {
         if (in_array($student, $this->students)) {
-            unset($this->students[array_search($student, $this->students)]);
+            $student->setClassId(-1);
+            $this->delStudentId(array_search($student, $this->students));
         } else {
             throw new \Exception("Deze student zit er niet eens in");
         }

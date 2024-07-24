@@ -21,7 +21,7 @@ class School
     {
         $students = PdoService::getInstance()->fetchAll("students");
         foreach ($students as $student) {
-            $this->addStudent(new Student($student['first_name'], DateTime::createFromFormat('Y-m-d', $student['dob']), $student['email'], $student['phone']), $student['id'], false);
+            $this->addStudent(new Student($student['id'], $student['first_name'], DateTime::createFromFormat('Y-m-d', $student['dob']), $student['email'], $student['phone'], $student['class_id']), $student['id'], false);
         }
     }
 
@@ -29,7 +29,7 @@ class School
     {
         $mentors = PdoService::getInstance()->fetchAll("mentors");
         foreach ($mentors as $mentor) {
-            $this->addMentor(new Mentor($mentor['first_name'], DateTime::createFromFormat('Y-m-d', $mentor['dob']), $mentor['email'], $mentor['phone']), $mentor['id'], false);
+            $this->addMentor(new Mentor($mentor['id'], $mentor['first_name'], DateTime::createFromFormat('Y-m-d', $mentor['dob']), $mentor['email'], $mentor['phone']), $mentor['id'], false);
         }
     }
 
@@ -37,7 +37,7 @@ class School
     {
         $schoolclass = PdoService::getInstance()->fetchAll("schoolclasses");
         foreach ($schoolclass as $class) {
-            $result = new SchoolClass($class['name'], $class['year'], $this->mentors[$class['mentor_id']]);
+            $result = new SchoolClass($class['id'], $class['name'], $class['year'], $this->mentors[$class['mentor_id']]);
             $students = PdoService::getInstance()->fetchAll("students WHERE class_id=" . $class['id']);
             foreach ($students as $student) {
                 $result->addStudent($this->students[$student['id']]);
@@ -73,19 +73,11 @@ class School
 
     public function addMentor(Mentor $mentor, int $mentorId = -1, $insert = true): void
     {
-        if ($insert === true) {
-            $mentorId = PdoService::getInstance()->insert("INSERT into mentors (first_name,dob,email,phone) VALUES (?,?,?,?)", [$mentor->getName(), $mentor->getDob()->format('Y-m-d'), $mentor->getMail(), $mentor->getPhone()]);
-        }
-
         $this->mentors += [$mentorId => $mentor];
     }
 
     public function addStudent(Student $student, int $studentId = -1, $insert = true): void
     {
-        if ($insert === true) {
-            $studentId = PdoService::getInstance()->insert("INSERT into students (first_name,dob,email,phone) VALUES (?,?,?,?)", [$student->getName(), $student->getDob()->format('Y-m-d'), $student->getMail(), $student->getPhone()]);
-        }
-
         $this->students += [$studentId => $student];
     }
 

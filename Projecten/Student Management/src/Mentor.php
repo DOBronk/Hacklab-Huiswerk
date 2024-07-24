@@ -12,7 +12,9 @@ class Mentor extends Person
      * @param string $mail Email address
      * @param string $phone Phone number
      */
-    public function __construct(string $name, DateTime $dob, string $mail, string $phone)
+    private int $id;
+
+    public function __construct(int $id, string $name, DateTime $dob, string $mail, string $phone)
     {
         parent::__construct($name, $dob, $mail, $phone);
     }

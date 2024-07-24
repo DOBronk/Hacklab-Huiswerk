@@ -60,12 +60,12 @@
         <td><b>E-mail</b></td>
         <td><b>Telefoonnr</b></td>
     </tr>
-    <?php foreach($schoolclass->getStudents() as $studentId => $student) { ?>
+    <?php foreach($schoolclass->getStudents() as $student) { ?>
     <tr>
         <?php showStudent($student); ?>
         <td>
             <form method="post" action='/?page=class&action=del&classid=<?= $classId ?>'>
-                <input type="hidden" name="studentid" value="<?= $studentId ?>">
+                <input type="hidden" name="studentid" value="<?= $student->getId() ?>">
                 <input type="hidden" name="schoolclassid" value="<?= $classId ?>">
                 <input type="submit" value="Verwijder">
             </form>

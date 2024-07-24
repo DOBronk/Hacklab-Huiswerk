@@ -7,13 +7,10 @@ class Studentcontroller
     {
         global $school;
 
-
-        $school->addStudent(new Student($name, DateTime::createFromFormat('Y-m-d', $dob), $mail, $phone));
+        $studentId = PdoService::getInstance()->insert("INSERT into students (first_name,dob,email,phone) VALUES (?,?,?,?)", [$name, $dob, $mail, $phone]);
+        $school->addStudent(new Student($studentId, $name, DateTime::createFromFormat('Y-m-d', $dob), $mail, $phone));
 
         header("location: /");
-
-
-
     }
     public static function Modify($id, $name, $dob, $mail, $phone): void
     {
@@ -23,6 +20,7 @@ class Studentcontroller
         $student->setDob(DateTime::createFromFormat('Y-m-d', $dob));
         $student->setMail($mail);
         $student->setPhone($phone);
+        PdoService::getInstance()->insert("UPDATE students SET first_name=?,dob=?,email=?,phone=? WHERE id=?", [$name, $dob, $mail, $phone, $id]);
         header("location: /");
     }
 
