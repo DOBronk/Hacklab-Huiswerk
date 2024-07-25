@@ -7,10 +7,17 @@ require_once "Person.php";
 class SchoolClass
 {
     private array $students;
+    private int $class_id = -1;
 
-    public function __construct(private int $class_id, private string $name, private int $year, private Mentor $mentor)
+    public function __construct(int $class_id, private string $name, private int $year, private Mentor $mentor)
     {
         $this->students = [];
+        $this->class_id = $class_id;
+    }
+
+    public function getId(): int
+    {
+        return $this->class_id;
     }
 
     public function getMentor(): Mentor

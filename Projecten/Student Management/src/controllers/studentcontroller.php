@@ -1,6 +1,4 @@
 <?php
-require_once "main.php";
-
 class Studentcontroller
 {
     public static function Create($name, string $dob, $mail, $phone): void
@@ -36,6 +34,11 @@ class Studentcontroller
         $student = $school->getStudent((int) $studentId);
 
         include_once '.\html\student\modify.html';
+    }
+    public static function getStudentDropdown(array $exclude = []): void
+    {
+        $school = $_SESSION["school"];
+        include 'html/student/dropdown.html';
     }
 
     public static function ShowCreate(): void

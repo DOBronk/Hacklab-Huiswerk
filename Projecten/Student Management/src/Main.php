@@ -1,15 +1,15 @@
 <?PHP
-require_once "School.php";
-require_once "Mailer.php";
+require_once "models/School.php";
+require_once "models/Mailer.php";
 require_once "data/db.php";
 
 session_start();
-$school = new School();
+
 // Load session variables
 if (isset($_SESSION["school"])) {
     $school = $_SESSION["school"];
 } else {
-    $_SESSION["school"] = $school;
+    $_SESSION["school"] = new School();
 }
 
 /**
@@ -18,9 +18,7 @@ if (isset($_SESSION["school"])) {
  */
 function showAllClasses(): void
 {
-    global $school;
-
-    foreach ($school->getSchools() as $schoolClass) {
+    foreach ($_SESSION["school"]->getSchools() as $schoolClass) {
         showclass($schoolClass);
     }
 }
@@ -32,15 +30,13 @@ function showAllClasses(): void
  */
 function showClass(SchoolClass $schoolclass): void
 {
-    global $school;
-    $mentorId = array_search($schoolclass->getMentor(), $school->getMentors());
-    $classId = array_search($schoolclass, $school->getSchools());
+    $school = $_SESSION["school"];
     include 'html/schoolclass/schoolclass.html';
 }
 
 function showAllStudents(): void
 {
-    global $school;
+    $school = $_SESSION["school"];
     include_once 'html/student/list.html';
 }
 
@@ -51,13 +47,13 @@ function showAllStudents(): void
  */
 function showMentor(Mentor $mentor): void
 {
-    global $school;
+    $school = $_SESSION["school"];
     include 'html/mentor.html';
 }
 
 function getStudentDropdown(array $exclude = []): void
 {
-    global $school;
+    $school = $_SESSION["school"];
     include 'html/student/dropdown.html';
 }
 
@@ -68,7 +64,7 @@ function getStudentDropdown(array $exclude = []): void
  */
 function showStudent(Student $student): void
 {
-    global $school;
+    $school = $_SESSION["school"];
     include 'html/student.html';
 }
 
@@ -78,7 +74,7 @@ function showStudent(Student $student): void
  */
 function showSpecials(): array
 {
-    global $school;
+    $school = $_SESSION["school"];
     $studentsMatched = [];
     $students = $school->getStudents();
 
@@ -92,7 +88,7 @@ function showSpecials(): array
 
 function mailerExample(): void
 {
-    global $school;
+    $school = $_SESSION["school"];
 
     $mentor = $school->getMentor($_POST["mentorid"]);
     $text = htmlspecialchars(($_POST["mailtext"]));
@@ -106,6 +102,7 @@ function sessionRestart(): void
     session_destroy();
     session_start();
     $_SESSION['msg'] = '<br>Sessie gereset!<br>';
+    $_SESSION["school"] = new School();
 }
 
 function homeHandler(): void

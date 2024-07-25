@@ -42,7 +42,7 @@
         <td colspan=3>
             <form method="post" action='/?page=mail'>
                 <input type="text" style="width: 80%; margin: 0 auto;" name="mailtext">
-                <input type="hidden" name="mentorid" value="<?= $mentorId ?>">
+                <input type="hidden" name="mentorid" value="<?= $schoolclass->getMentor()->getId() ?>">
                 <input type="submit" style="float: right;" value="versturen">
             </form>
         </td>
@@ -64,18 +64,19 @@
     <tr>
         <?php showStudent($student); ?>
         <td>
-            <form method="post" action='/?page=class&action=del&classid=<?= $classId ?>'>
+            <form method="post" action='/?page=class&action=del&classid=<?= $schoolclass->getId() ?>'>
                 <input type="hidden" name="studentid" value="<?= $student->getId() ?>">
-                <input type="hidden" name="schoolclassid" value="<?= $classId ?>">
+                <input type="hidden" name="schoolclassid" value="<?= $schoolclass->getId() ?>">
                 <input type="submit" value="Verwijder">
             </form>
         </td>
     </tr>
     <?php } ?>
     <tr>
-        <td colspan="4">Student Toevoegen: <form method="post" action="/?page=class&action=add&classid=<?= $classId ?>">
+        <td colspan="4">Student Toevoegen: <form method="post"
+                action="/?page=class&action=add&classid=<?= $schoolclass->getId() ?>">
                 <?php getStudentDropdown($schoolclass->getStudents()); ?>
-                <input type="hidden" name="schoolclassid" value="<?= $classId ?>">
+                <input type="hidden" name="schoolclassid" value="<?= $schoolclass->getId() ?>">
                 <input type="submit" value="Toevoegen">
             </form>
         </td>

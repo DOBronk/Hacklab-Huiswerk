@@ -1,7 +1,4 @@
 <?php
-
-require_once "main.php";
-
 class Classcontroller
 {
     /*       if ($insert === true) {
