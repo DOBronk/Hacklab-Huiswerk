@@ -1,57 +1,38 @@
-<table border="1">
+<table border="0" style="border-spacing:10px">
     <tr>
-        <td colspan="10">
-            <center>
-                <h2>Schoolklas
-                    <?= $schoolclass->getName() ?>
-                </h2>
-            </center>
+        <td colspan="1" style="text-align: left;">
+            <strong>Klas</strong>
+        </td>
+        <td>
+            <?= $schoolclass->getName() ?>
         </td>
     </tr>
     <tr>
-        <td><b>Leerjaar</b></td>
-        <td><b>Aantal studenten</b></td>
-    </tr>
-    <tr>
+        <td><strong>Leerjaar: </strong></td>
         <td>
             <?= $schoolclass->getYear() ?>
         </td>
+    </tr>
+    <tr>
+        <td><strong>Mentor: </strong></td>
         <td>
-            <?= count($schoolclass->getStudents()) ?>
+            <?= $schoolclass->getMentor()->getName() ?>
         </td>
-    </tr>
-
-    <tr>
-        <td colspan="10">
-            <center>
-                <h2>Mentor</h2>
-            </center>
-        </td>
-    </tr>
-    <tr>
-        <td><b>Naam</b></td>
-        <td><b>Geboortedatum</b></td>
-        <td><b>E-mail</b></td>
-        <td><b>Telefoonnr</b></td>
-    </tr>
-    <tr>
-        <?= ShowMentor($schoolclass->getMentor()) ?>
-    </tr>
-    <tr>
-        <td>Stuur email naar mentor</td>
-        <td colspan=3>
+        <td><strong>Stuur mail:</strong></td>
+        <td>
             <form method="post" action='/?page=mail'>
-                <input type="text" style="width: 80%; margin: 0 auto;" name="mailtext">
-                <input type="hidden" name="mentorid" value="<?= $schoolclass->getMentor()->getId() ?>">
-                <input type="submit" style="float: right;" value="versturen">
-            </form>
+        <td> <input type="text" style="width: 100%; margin: 0 auto;" name="mailtext"></td>
+        <td> <input type="hidden" name="mentorid" value="<?= $schoolclass->getMentor()->getId() ?>">
+            <input type="submit" style="float: right;" value="versturen">
+        </td>
+        </form>
         </td>
     </tr>
     <tr>
         <td colspan="10">
-            <center>
-                <h2>Studenten</h2>
-            </center>
+            <strong>Studenten (
+                <?= count($schoolclass->getStudents()) ?>)
+            </strong>
         </td>
     </tr>
     <tr>
@@ -73,14 +54,16 @@
     </tr>
     <?php } ?>
     <tr>
-        <td colspan="4">Student Toevoegen: <form method="post"
-                action="/?page=class&action=add&classid=<?= $schoolclass->getId() ?>">
+        <form method="post" action="/?page=class&action=add&classid=<?= $schoolclass->getId() ?>">
+            <td colspan="2">Student Toevoegen:
+
                 <?php getStudentDropdown($schoolclass->getStudents()); ?>
                 <input type="hidden" name="schoolclassid" value="<?= $schoolclass->getId() ?>">
-                <input type="submit" value="Toevoegen">
-            </form>
-        </td>
+            </td>
+            <td><input type="submit" value="Toevoegen"></td>
+
+            </td>
+        </form>
     </tr>
 </table>
-<br>
 <br>
