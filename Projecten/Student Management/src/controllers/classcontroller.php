@@ -1,9 +1,22 @@
 <?php
 class Classcontroller
 {
-    /*       if ($insert === true) {
-           $schoolclassId = PdoService::getInstance()->insert("INSERT into schoolclasses (name,year,mentor_id) VALUES (?,?,?)", [$schoolclass->getName(), $schoolclass->getYear(), $schoolclass->getMentorId($this->mentors)]);
-       } */
+    public static function create(string $name, int $year, int $mentorid): void
+    {
+        global $school;
+        $schoolclassId = PdoService::getInstance()->insert("INSERT into schoolclasses (name,year,mentor_id) VALUES (?,?,?)", [$name, $year, $mentorid]);
+        $school->addSchoolClass(new SchoolClass((int) $schoolclassId, $name, $year, $school->getMentors($mentorid)));
+
+        header("location: /");
+    }
+    public static function modify(int $id, int $mentorid): void
+    {
+        global $school;
+        $schoolclass = $school->getSchool($id);
+        $schoolclass->setMentor($school->getMentor($mentorid));
+        PdoService::getInstance()->insert("UPDATE schoolclasses SET mentor_id=? WHERE id=?", [$mentorid, $id]);
+        header("location: /");
+    }
 
     public static function deleteStudent(int $student_id, int $class_id): void
     {

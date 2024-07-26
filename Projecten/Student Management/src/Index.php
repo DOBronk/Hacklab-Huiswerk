@@ -1,10 +1,13 @@
 <?php
+use PHPUnit\Event\Test\MockObjectForIntersectionOfInterfacesCreated;
+
 require_once "Main.php";
 require_once "controllers/studentcontroller.php";
 require_once "controllers/classcontroller.php";
 require_once "controllers/mentorcontroller.php";
 
 $page = $_GET['page'] ?? 'home';
+
 
 switch ($page) {
     case "mail":
@@ -24,7 +27,24 @@ switch ($page) {
         homeHandler();
         break;
     case 'mentor':
-        Mentorcontroller::list();
+        switch (@$_GET["action"]) {
+            case "list":
+                Mentorcontroller::list();
+                break;
+            case "modify":
+                Mentorcontroller::showModify();
+                break;
+            case "create":
+                Mentorcontroller::showCreate();
+                break;
+            case "save":
+                if (!isset($_GET['mentorid'])) {
+                    Mentorcontroller::create($_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']);
+                } else {
+                    Mentorcontroller::modify($_GET['mentorid'], $_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']);
+                }
+                break;
+        }
         break;
     case 'schoolclass':
         switch (@$_GET["action"]) {
@@ -33,6 +53,9 @@ switch ($page) {
                 break;
             case "list":
                 Classcontroller::list();
+                break;
+            case "save":
+                Classcontroller::modify($_GET['classid'], (int) $_POST['mentid']);
                 break;
         }
         break;

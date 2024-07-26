@@ -15,8 +15,25 @@
     </tr>
     <tr>
         <td><strong>Mentor: </strong></td>
-        <td>
-            <?= $schoolclass->getMentor()->getName() ?>
+        <td colspan="2">
+            <form method="post" action='/?page=schoolclass&action=save&classid=<?= $schoolclass->getId() ?>'>
+
+                <select name="mentid">
+                    <option value="<?= $schoolclass->getMentor()->getId() ?>">
+                        <?= $schoolclass->getMentor()->getName() ?>
+                    </option>
+
+                    <?php foreach($school->getMentors() as $id => $mentor) {
+        if($mentor->getId() != $schoolclass->getMentor()->getId()) { ?>
+                    <option value="<?= $id ?>">
+                        <?= $mentor->getName() ?>
+                    </option>
+                    <?php } } ?>
+                </select>
+                <input type="submit" value="Aanpassen">
+            </form>
+
+
         </td>
         <td><strong>Stuur mail:</strong></td>
         <td>

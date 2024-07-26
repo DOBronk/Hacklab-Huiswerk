@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mentor aanpassen</title>
+</head>
+
+<body>
+    <form method="POST" action="/?page=mentor&action=save&mentorid=<?= $mentorId ?>">
+        Naam: <input type="text" name="name" value="<?= $mentor->getName() ?>">
+        Geboortedatum: <input type="date" name="dob" value="<?= $mentor->getDob()->format('Y-m-d') ?>">
+        E-mail: <input type="text" name="mail" value="<?= $mentor->getMail() ?>">
+        Phone: <input type="text" name="phone" value="<?= $mentor->getPhone() ?>">
+        <input type="submit" value="Aanpassen">
+    </form>
+</body>
+
+</html>
