@@ -1,7 +1,7 @@
 <?php
 class Studentcontroller
 {
-    public static function Create($name, string $dob, $mail, $phone): void
+    public static function create($name, string $dob, $mail, $phone): void
     {
         global $school;
 
@@ -10,7 +10,7 @@ class Studentcontroller
 
         header("location: /");
     }
-    public static function Modify($id, $name, $dob, $mail, $phone): void
+    public static function modify($id, $name, $dob, $mail, $phone): void
     {
         global $school;
         $student = $school->getStudent($id);
@@ -22,12 +22,13 @@ class Studentcontroller
         header("location: /");
     }
 
-    public static function List(): void
+    public static function list(): void
     {
-        showAllStudents();
+        $school = $_SESSION["school"];
+        include_once 'html/student/list.html';
     }
 
-    public static function ShowModify(): void
+    public static function showModify(): void
     {
         global $school;
         $studentId = $_GET['studentid'];
@@ -41,7 +42,7 @@ class Studentcontroller
         include 'html/student/dropdown.html';
     }
 
-    public static function ShowCreate(): void
+    public static function showCreate(): void
     {
         include_once '.\html\student\create.html';
     }

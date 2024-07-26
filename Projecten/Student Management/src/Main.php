@@ -34,12 +34,6 @@ function showClass(SchoolClass $schoolclass): void
     include 'html/schoolclass/schoolclass.html';
 }
 
-function showAllStudents(): void
-{
-    $school = $_SESSION["school"];
-    include_once 'html/student/list.html';
-}
-
 /**
  * Display mentor in HTML Table Columns
  * @param Mentor $classmentor The mentor to be displayed

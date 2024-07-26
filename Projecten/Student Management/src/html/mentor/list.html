@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <a href="/?page=student&action=create">Student aanmaken</a> <br><br>
+    <a href="/?page=mentor&action=create">Mentor aanmaken</a> <br><br>
 
     <div class="table">
         <div class="row">
@@ -14,22 +14,22 @@
             <div class="cell">E-Mail</div>
             <div class="cell">Telefoon</div>
         </div>
-        <?php foreach($school->getStudents() as $id => $student) { ?>
+        <?php foreach($school->getMentors() as $id => $mentor) { ?>
         <div class="row">
             <div class="cell">
-                <?= $student->getName() ?>
+                <?= $mentor->getName() ?>
             </div>
             <div class="cell">
-                <?= $student->getDob()->format('d-m-Y') ?>
+                <?= $mentor->getDob()->format('d-m-Y') ?>
             </div>
             <div class="cell">
-                <?= $student->getMail() ?>
+                <?= $mentor->getMail() ?>
             </div>
             <div class="cell">
-                <?= $student->getPhone() ?>
+                <?= $mentor->getPhone() ?>
             </div>
             <div class="cell">
-                <p><a href="/?page=student&action=modify&studentid=<?= $id ?>">Wijzigen</a></p>
+                <p><a href="/?page=mentor&action=modify&mentorid=<?= $id ?>">Wijzigen</a></p>
             </div>
         </div>
         <?php } ?>

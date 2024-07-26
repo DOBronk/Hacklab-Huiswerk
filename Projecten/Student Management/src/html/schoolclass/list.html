@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/html/css/styles.css">
+</head>
+
+<body>
+
+    <div class="table">
+        <div class="row">
+            <div class="cell">Naam</div>
+            <div class="cell">Leerjaar</div>
+            <div class="cell">Mentor</div>
+            <div class="cell">Opties</div>
+        </div>
+        <?php foreach ($_SESSION["school"]->getSchools() as $schoolClass) { ?>
+        <div class="row">
+            <div class="cell">
+                <?= $schoolClass->getName() ?>
+            </div>
+            <div class="cell">
+                <?= $schoolClass->getYear() ?>
+            </div>
+            <div class="cell">
+                <?= $schoolClass->getMentor()->getName() ?>
+            </div>
+            <div class="cell">
+                <p><a href="/?page=schoolclass&action=show&classid=<?= $schoolClass->getId() ?>">Bekijken</a></p>
+            </div>
+
+        </div>
+
+        <?php } ?>
+
+    </div>
+</body>
+
+</html>

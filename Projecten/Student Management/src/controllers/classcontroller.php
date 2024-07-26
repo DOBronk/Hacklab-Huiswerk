@@ -20,4 +20,18 @@ class Classcontroller
         $school->getSchool($class_id)->addStudent($school->GetStudent($student_id));
         header('location: /');
     }
+
+    public static function show(int $class_id): void
+    {
+        $school = $_SESSION["school"];
+        $schoolclass = $school->getSchool($class_id);
+        include 'html/schoolclass/schoolclass.html';
+    }
+
+    public static function list(): void
+    {
+        $school = $_SESSION["school"];
+        include 'html/schoolclass/list.html';
+    }
+
 }
