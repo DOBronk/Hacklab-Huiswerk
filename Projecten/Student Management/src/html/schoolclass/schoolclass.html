@@ -53,7 +53,7 @@
         </td>
     </tr>
     <tr>
-        <td><b>Naam</b></td>
+        <td colspan="2"><b>Naam</b></td>
         <td><b>Geboortedatum</b></td>
         <td><b>E-mail</b></td>
         <td><b>Telefoonnr</b></td>
@@ -74,7 +74,7 @@
         <form method="post" action="/?page=class&action=add&classid=<?= $schoolclass->getId() ?>">
             <td colspan="2">Student Toevoegen:
 
-                <?php getStudentDropdown($schoolclass->getStudents()); ?>
+                <?php Studentcontroller::getStudentDropdown($schoolclass->getStudents()); ?>
                 <input type="hidden" name="schoolclassid" value="<?= $schoolclass->getId() ?>">
             </td>
             <td><input type="submit" value="Toevoegen"></td>

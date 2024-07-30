@@ -4,17 +4,14 @@ class Mentorcontroller
 {
     public static function create($name, string $dob, $mail, $phone): void
     {
-        global $school;
-
         $mentorId = PdoService::getInstance()->insert("INSERT into mentors (first_name,dob,email,phone) VALUES (?,?,?,?)", [$name, $dob, $mail, $phone]);
-        $school->addMentor(new Mentor($mentorId, $name, DateTime::createFromFormat('Y-m-d', $dob), $mail, $phone));
+        $_SESSION["school"]->addMentor(new Mentor($mentorId, $name, DateTime::createFromFormat('Y-m-d', $dob), $mail, $phone));
 
         header("location: /");
     }
     public static function modify($id, $name, $dob, $mail, $phone): void
     {
-        global $school;
-        $mentor = $school->getMentor($id);
+        $mentor = $_SESSION["school"]->getMentor($id);
         $mentor->setName($name);
         $mentor->setDob(DateTime::createFromFormat('Y-m-d', $dob));
         $mentor->setMail($mail);
@@ -31,7 +28,7 @@ class Mentorcontroller
 
     public static function showModify(): void
     {
-        global $school;
+        $school = $_SESSION["school"];
         $mentorId = $_GET['mentorid'];
         $mentor = $school->getMentor((int) $mentorId);
 

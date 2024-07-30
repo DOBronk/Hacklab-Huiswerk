@@ -8,7 +8,7 @@
 
 <body>
     <h1>Middelbare School -
-        <?= $school->getName() ?>
+        <?= $_SESSION["school"]->getName() ?>
     </h1>
     <?= $msg ?>
 
@@ -16,6 +16,10 @@
     <a href="/?page=student&action=list">Alle studenten weergeven</a><br><br>
     <a href="/?page=mentor&action=list">Alle mentoren weergeven</a><br><br>
     <a href="/?page=schoolclass&action=list">Alle klassen weergeven</a><br><br>
+
+    <h2>Alle klassen op de middelbare school</h2>
+    <?php Classcontroller::list(); ?>
+
 
     <h2>Alle leerlingen geboren in 2004</h2>
     <table>
@@ -34,10 +38,6 @@
 
         </tr>
     </table>
-    <br>
-    <h2>Alle klassen op de middelbare school</h2>
-
-    <?php showAllClasses(); ?>
 </body>
 
 </html>

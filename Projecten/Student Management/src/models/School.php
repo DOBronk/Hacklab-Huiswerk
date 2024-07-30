@@ -61,10 +61,10 @@ class School
 
     public function addSchoolClass(SchoolClass $schoolclass, $insert = true): void
     {
-        $schoolclassId = count($this->schoolClasses);
-
         if ($insert === true) {
             $schoolclassId = PdoService::getInstance()->insert("INSERT into schoolclasses (name,year,mentor_id) VALUES (?,?,?)", [$schoolclass->getName(), $schoolclass->getYear(), $schoolclass->getMentorId($this->mentors)]);
+        } else {
+            $schoolclassId = $schoolclass->getId();
         }
 
         $this->schoolClasses += [$schoolclassId => $schoolclass];

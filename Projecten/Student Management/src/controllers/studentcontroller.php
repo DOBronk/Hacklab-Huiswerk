@@ -30,9 +30,8 @@ class Studentcontroller
 
     public static function showModify(): void
     {
-        global $school;
         $studentId = $_GET['studentid'];
-        $student = $school->getStudent((int) $studentId);
+        $student = $_SESSION["school"]->getStudent((int) $studentId);
 
         include_once '.\html\student\modify.html';
     }
