@@ -28,15 +28,9 @@ function showStudent(Student $student): void
  */
 function showSpecials(): array
 {
-    $studentsMatched = [];
-
-    foreach ($_SESSION["school"]->getStudents() as $match) {
-        if ($match->getDob()->format('Y') == '2004') {
-            array_push($studentsMatched, $match);
-        }
-    }
-
-    return $studentsMatched;
+    return array_filter($_SESSION["school"]->getStudents(), function ($var) {
+        return $var->getDob()->format('Y') == '2004';
+    });
 }
 
 /**
