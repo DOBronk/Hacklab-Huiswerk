@@ -45,6 +45,8 @@ class Classcontroller
     public static function list(): void
     {
         $school = $_SESSION["school"];
+
+        //    print_r($school->getSchools());
         include 'html/schoolclass/list.html';
     }
 

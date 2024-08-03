@@ -6,9 +6,11 @@ class School
     private array $mentors = [];
     private array $students = [];
     private array $schoolClasses = [];
-
     private string $name;
 
+    /**
+     * Summary of __construct
+     */
     public function __construct()
     {
         $this->name = PdoService::getInstance()->fetch("schooldata")['name'];
