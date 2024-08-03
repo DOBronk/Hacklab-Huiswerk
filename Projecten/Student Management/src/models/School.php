@@ -68,18 +68,17 @@ class School
         } else {
             $schoolclassId = $schoolclass->getId();
         }
-
-        $this->schoolClasses += [$schoolclassId => $schoolclass];
+        $this->schoolClasses[$schoolclassId] = $schoolclass;
     }
 
-    public function addMentor(Mentor $mentor, int $mentorId = -1, $insert = true): void
+    public function addMentor(Mentor $mentor, int $mentorId = -1): void
     {
-        $this->mentors += [$mentorId => $mentor];
+        $this->mentors[$mentorId] = $mentor;
     }
 
-    public function addStudent(Student $student, int $studentId = -1, $insert = true): void
+    public function addStudent(Student $student, int $studentId = -1): void
     {
-        $this->students += [$studentId => $student];
+        $this->students[$studentId] = $student;
     }
 
     public function getStudent(int $id): Student
