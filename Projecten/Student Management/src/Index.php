@@ -6,77 +6,52 @@ require_once "controllers/studentcontroller.php";
 require_once "controllers/classcontroller.php";
 require_once "controllers/mentorcontroller.php";
 
-$page = $_GET['page'] ?? 'home';
-
-
-switch ($page) {
-    case "mail":
-        mailerExample();
-        break;
-    case 'class':
-        switch (@$_GET["action"]) {
-            case 'del':
-                Classcontroller::deleteStudent((int) $_POST["studentid"], (int) $_POST["schoolclassid"]);
-                break;
-            case 'add':
-                Classcontroller::addStudent((int) $_POST["studentid"], (int) $_POST["schoolclassid"]);
-                break;
-        }
-        break;
-    case 'home':
-        homeHandler();
-        break;
-    case 'mentor':
-        switch (@$_GET["action"]) {
-            case "list":
-                Mentorcontroller::list();
-                break;
-            case "modify":
-                Mentorcontroller::showModify();
-                break;
-            case "create":
-                Mentorcontroller::showCreate();
-                break;
-            case "save":
-                if (!isset($_GET['mentorid'])) {
-                    Mentorcontroller::create($_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']);
-                } else {
-                    Mentorcontroller::modify($_GET['mentorid'], $_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']);
-                }
-                break;
-        }
-        break;
-    case 'schoolclass':
-        switch (@$_GET["action"]) {
-            case "show":
-                Classcontroller::show($_GET['classid']);
-                break;
-            case "list":
-                Classcontroller::list();
-                break;
-            case "save":
-                Classcontroller::modify($_GET['classid'], (int) $_POST['mentid']);
-                break;
-        }
-        break;
-    case "student":
-        switch (@$_GET["action"]) {
-            case "list":
-                Studentcontroller::list();
-                break;
-            case "modify":
-                Studentcontroller::showModify();
-                break;
-            case "save":
-                if (!isset($_GET['studentid'])) {
-                    Studentcontroller::create($_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']);
-                } else {
-                    Studentcontroller::modify($_GET['studentid'], $_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']);
-                }
-                break;
-            case "create":
-                Studentcontroller::showCreate();
-                break;
-        }
+function routeClass()
+{
+    return match (@$_GET["action"]) {
+        'del' => Classcontroller::deleteStudent((int) $_POST["studentid"], (int) $_POST["schoolclassid"]),
+        'add' => Classcontroller::addStudent((int) $_POST["studentid"], (int) $_POST["schoolclassid"])
+    };
 }
+function routeMentor()
+{
+    return match (@$_GET["action"]) {
+        "list" => Mentorcontroller::list(),
+        "modify" => Mentorcontroller::showModify(),
+        "create" => Mentorcontroller::showCreate(),
+        "save" => (!isset($_GET['mentorid'])) ? Mentorcontroller::create($_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']) :
+        Mentorcontroller::modify($_GET['mentorid'], $_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone'])
+    };
+}
+
+function routeSchoolclass()
+{
+    return match (@$_GET["action"]) {
+        "show" => Classcontroller::show($_GET['classid']),
+        "list" => Classcontroller::list(),
+        "save" => Classcontroller::modify($_GET['classid'], (int) $_POST['mentid'])
+    };
+}
+
+function routeStudent()
+{
+    return match (@$_GET["action"]) {
+        "list" => Studentcontroller::list(),
+        "modify" => Studentcontroller::showModify(),
+        "save" => (!isset($_GET['studentid'])) ? Studentcontroller::create($_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone'])
+        : Studentcontroller::modify($_GET['studentid'], $_POST['name'], $_POST['dob'], $_POST['mail'], $_POST['phone']),
+        "create" => Studentcontroller::showCreate()
+    };
+}
+
+match ($_GET['page'] ?? 'home') {
+    "mail" => mailerExample(),
+    "class" => routeClass(),
+    "home" => homeHandler(),
+    "mentor" => routeMentor(),
+    'schoolclass' => routeSchoolclass(),
+    "student" => routeStudent()
+};
+
+
 ?>
